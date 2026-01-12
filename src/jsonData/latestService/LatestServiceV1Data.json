@@ -3,88 +3,72 @@
         "id": 1,
         "thumb": "service-1.jpg",
         "icon": "icon-1.png",
-        "title": "Hybrid Battery Service",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/hybrid-battery-service.pdf"
+        "title": "Engine Tune-Up",
+        "text": "Professional engine tune-up services to optimize performance and fuel efficiency. Our skilled technicians use advanced diagnostic tools to ensure your engine runs smoothly and efficiently. We perform comprehensive inspections of spark plugs, filters, fuel systems, and engine components to identify and address any issues. With transparent pricing and quality service, we help extend your engine's lifespan while improving overall vehicle performance.",
+        "brochure": "/brochures/engine-tune-up.pdf"
     },
     {
         "id": 2,
         "thumb": "service-2.jpg",
         "icon": "icon-2.png",
-        "title": "Hybrid Battery Replacement",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/hybrid-battery-replacement.pdf"
+        "title": "Hybrid Battery Service & Replacement",
+        "text": "Specialized hybrid battery diagnostics, maintenance, and replacement services. Our expert technicians ensure your hybrid vehicle's battery system operates at peak performance with genuine parts. We use advanced diagnostic equipment to assess battery health, capacity, and charging efficiency. Whether you need routine maintenance or complete battery replacement, we provide reliable solutions that maintain your hybrid vehicle's optimal performance and fuel economy.",
+        "brochure": "/brochures/hybrid-battery-service-replacement.pdf"
     },
     {
         "id": 3,
         "thumb": "service-3.jpg",
         "icon": "icon-3.png",
-        "title": "ABS Brake Replacement",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/abs-brake-replacement.pdf"
+        "title": "ABS Brake System Replacement",
+        "text": "Complete ABS brake system diagnostics, repair, and replacement services. We ensure your vehicle's braking system meets the highest safety standards with quality components and expert installation. Our technicians thoroughly inspect brake pads, rotors, calipers, and ABS sensors to identify any issues. With our expertise in both conventional and hybrid vehicle brake systems, we provide safe and reliable braking solutions that protect you and your passengers.",
+        "brochure": "/brochures/abs-brake-system-replacement.pdf"
     },
     {
         "id": 4,
         "thumb": "service-4.jpg",
         "icon": "icon-4.png",
-        "title": "Dual Clutch Replacement",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/dual-clutch-replacement.pdf"
+        "title": "Dual Clutch Repair & Replacement",
+        "text": "Expert dual clutch transmission repair and replacement services. Our technicians specialize in diagnosing and fixing dual clutch issues to restore smooth shifting and optimal vehicle performance. We use specialized diagnostic tools to identify problems with clutch packs, mechatronics units, and transmission control systems. Whether it's a minor adjustment or complete replacement, we ensure your dual clutch transmission operates smoothly and efficiently.",
+        "brochure": "/brochures/dual-clutch-repair-replacement.pdf"
     },
     {
         "id": 5,
         "thumb": "service-5.jpg",
         "icon": "icon-5.png",
-        "title": "Gearbox Repair",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/gearbox-repair.pdf"
+        "title": "Hybrid Diagnosis & Electrical Repair",
+        "text": "Advanced hybrid vehicle diagnostics and electrical system repairs using state-of-the-art equipment. We specialize in identifying and resolving complex hybrid and electrical issues with precision. Our technicians are trained to work with high-voltage systems, battery management systems, and hybrid control units. From electrical fault diagnosis to wiring repairs and component replacement, we ensure your hybrid vehicle's electrical systems function safely and efficiently.",
+        "brochure": "/brochures/hybrid-diagnosis-electrical-repair.pdf"
     },
     {
         "id": 6,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
-        "title": "Vehicle Full Service",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "title": "Vehicle Full Service (Oil Change)",
+        "text": "Comprehensive vehicle servicing including oil changes, fluid top-ups, filter replacements, and multi-point inspections. Keep your vehicle in optimal condition with our thorough maintenance service. We check all essential systems including brakes, tires, lights, belts, and hoses to ensure everything is working properly. Our full service package helps prevent costly repairs down the road while maintaining your vehicle's reliability and performance.",
         "brochure": "/brochures/vehicle-full-service.pdf"
     },
     {
         "id": 7,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
-        "title": "AC Service & Repair",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "title": "A/C Service & Repairs",
+        "text": "Complete air conditioning system service, repair, and recharging. Our technicians ensure your vehicle's climate control system provides optimal comfort with professional diagnostics and quality repairs. We diagnose issues with compressors, condensers, evaporators, and refrigerant systems to restore proper cooling performance. Whether you need a simple recharge or complex component replacement, we provide efficient and reliable A/C solutions for your comfort.",
         "brochure": "/brochures/ac-service-repair.pdf"
     },
     {
         "id": 8,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
-        "title": "Hybrid Diagnosis",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/hybrid-diagnosis.pdf"
+        "title": "General Mechanical Repairs",
+        "text": "Expert mechanical repair services for all vehicle components. From suspension and steering to drivetrain and engine repairs, we provide reliable solutions using quality parts and skilled craftsmanship. Our experienced technicians handle everything from routine maintenance to complex mechanical issues with precision and care. We use genuine and quality spare parts to ensure long-lasting repairs that keep your vehicle running smoothly and safely on the road.",
+        "brochure": "/brochures/general-mechanical-repairs.pdf"
     },
     {
         "id": 9,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
-        "title": "Vehicle Detailing",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/vehicle-detailing.pdf"
-    },
-    {
-        "id": 10,
-        "thumb": "service-6.jpg",
-        "icon": "icon-6.png",
-        "title": "Suspension Repair",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/suspension-repair.pdf"
-    },
-    {
-        "id": 11,
-        "thumb": "service-6.jpg",
-        "icon": "icon-6.png",
-        "title": "Key Programming",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/key-programming.pdf"
+        "title": "Many More Automobile Services",
+        "text": "Comprehensive automobile solutions for all your vehicle needs. From routine maintenance to complex repairs, AutoGrid provides professional, transparent, and reliable service for complete vehicle care. Our wide range of services covers everything from basic maintenance to specialized hybrid vehicle repairs, ensuring we can address any automotive issue you may encounter. With our customer-first approach, skilled technicians, and commitment to quality, we are your trusted partner for all automobile services in Kottawa.",
+        "brochure": "/brochures/many-more-automobile-services.pdf"
     }
 ]
