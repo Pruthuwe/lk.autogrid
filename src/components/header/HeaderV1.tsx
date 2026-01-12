@@ -71,17 +71,17 @@ const HeaderV1 = () => {
                                         <div className="te-header-top-wrapper">
                                             <div className="header-top-info">
                                                 <div className="te-header-contact-info">
-                                                    <span><Link to="mailto:info@example.com"><i className="fa-solid fa-envelope"></i>info@example.com</Link> </span>
-                                                    <span><i className="fa-solid fa-location-dot"></i>6391 Elgin Rt.Mirpur, 10299</span>
-                                                    <span><i className="fa-solid fa-clock"></i>Sunday - Friday: 9 am - 8 pm</span>
+                                                    <span><Link to="mailto:info@example.com"><i className="fa-solid fa-envelope"></i>info@autogrid.lk</Link> </span>
+                                                    <span><i className="fa-solid fa-location-dot"></i>246 Athurugiriya Road, Malapalla, Kottawa.</span>
+                                                    <span><i className="fa-solid fa-clock"></i>Monday - Saturday: 8:30 am - 6:30 pm</span>
                                                 </div>
                                             </div>
                                             <div className="header-top-info">
                                                 <div className="te-social-profile">
-                                                    <Link to="#"><i className="fa-brands fa-facebook-f"></i></Link>
-                                                    <Link to="#"><i className="fa-brands fa-twitter"></i></Link>
-                                                    <Link to="#"><i className="fa-brands fa-linkedin-in"></i></Link>
-                                                    <Link to="#"><i className="fa-brands fa-youtube"></i></Link>
+                                                    <Link to="https://www.facebook.com/autogridlk"><i className="fa-brands fa-facebook-f"></i></Link>
+                                                    <Link to="https://www.instagram.com/autogridlk/"><i className="fa-brands fa-instagram"></i></Link>
+                                                    <Link to="https://wa.me/94768950179"><i className="fa-brands fa-whatsapp"></i></Link>
+                                                    <Link to="https://www.tiktok.com/@autogridlk"><i className="fa-brands fa-tiktok"></i></Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -103,7 +103,7 @@ const HeaderV1 = () => {
                                         <div className="te-header-btn">
                                             <div className="te-cta-btn">
                                                 <span>Need help?</span>
-                                                <Link to="#"><i className="fa-solid fa-phone"></i>(307) 555-0133</Link>
+                                                <Link to="#"><i className="fa-solid fa-phone"></i>+91 12 844 722</Link>
                                             </div>
                                             <Link to="/contact" className="te-quote-btn">GET A QUOTE<i className="fa-solid fa-arrow-right"></i></Link>
                                         </div>
