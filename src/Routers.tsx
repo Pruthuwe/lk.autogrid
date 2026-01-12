@@ -17,14 +17,14 @@ const Routers = () => {
         <>
             <Routes>
                 <Route path='/' element={<Home1 />}></Route>
-                <Route path='/home-2' element={<Home2 />}></Route>
+                {/* <Route path='/home-2' element={<Home2 />}></Route> */}
                 <Route path='/about' element={<About />}></Route>
-                <Route path='/services' element={<Services />}></Route>
+                {/* <Route path='/services' element={<Services />}></Route> */}
                 <Route path='/service-details/:id' element={<ServiceDetails />}></Route>
                 <Route path='/projects' element={<Projects />}></Route>
                 <Route path='/project-details/:id' element={<ProjectDetails />}></Route>
-                <Route path='/blog' element={<Blog />}></Route>
-                <Route path='blog-details/:id' element={<BlogDetails />}></Route>
+                {/* <Route path='/blog' element={<Blog />}></Route>
+                <Route path='blog-details/:id' element={<BlogDetails />}></Route> */}
                 <Route path='/contact' element={<Contact />}></Route>
                 <Route path='/team' element={<Team />}></Route>
                 <Route path='/team-details/:id' element={<TeamDetails />}></Route>
