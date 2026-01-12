@@ -5,9 +5,10 @@ import FeatureV1Data from '../../jsonData/latestService/LatestServiceV1Data.json
 type serviceInfoData = {
     title: string;
     text: string;
+    brochure?: string;
 }
 const ServiceDetailsContent = ({ serviceInfo } : { serviceInfo:serviceInfoData }) => {
-    const { title,text } = serviceInfo
+    const { title, text, brochure } = serviceInfo
     return (
         <>
             {/* Service Details Page Start !*/}
@@ -133,7 +134,7 @@ const ServiceDetailsContent = ({ serviceInfo } : { serviceInfo:serviceInfoData }
                                     <div className="te-widget-title">
                                         <h4 className="wp-block-heading">Brochure</h4>
                                     </div>
-                                    <Link to="#" className="pdf-download-btn">
+                                    <Link to={brochure || "#"} className="pdf-download-btn" target="_blank" rel="noopener noreferrer">
                                         <div className="icon">
                                             <i className="fa-light fa-file-pdf" />
                                         </div>

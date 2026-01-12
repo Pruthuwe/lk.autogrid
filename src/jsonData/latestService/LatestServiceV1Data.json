@@ -5,77 +5,86 @@
         "icon": "icon-1.png",
         "title": "Hybrid Battery Service",
         "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
-        "brochure": "/brochures/hybrid-battery-service.pdf",
-        "companyDetails": "/brochures/company-details.pdf"
+        "brochure": "/brochures/hybrid-battery-service.pdf"
     },
     {
         "id": 2,
         "thumb": "service-2.jpg",
         "icon": "icon-2.png",
         "title": "Hybrid Battery Replacement",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/hybrid-battery-replacement.pdf"
     },
     {
         "id": 3,
         "thumb": "service-3.jpg",
         "icon": "icon-3.png",
         "title": "ABS Brake Replacement",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/abs-brake-replacement.pdf"
     },
     {
         "id": 4,
         "thumb": "service-4.jpg",
         "icon": "icon-4.png",
         "title": "Dual Clutch Replacement",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/dual-clutch-replacement.pdf"
     },
     {
         "id": 5,
         "thumb": "service-5.jpg",
         "icon": "icon-5.png",
         "title": "Gearbox Repair",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/gearbox-repair.pdf"
     },
     {
         "id": 6,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
         "title": "Vehicle Full Service",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/vehicle-full-service.pdf"
     },
     {
         "id": 7,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
         "title": "AC Service & Repair",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/ac-service-repair.pdf"
     },
     {
         "id": 8,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
         "title": "Hybrid Diagnosis",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/hybrid-diagnosis.pdf"
     },
     {
         "id": 9,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
         "title": "Vehicle Detailing",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/vehicle-detailing.pdf"
     },
     {
         "id": 10,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
         "title": "Suspension Repair",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/suspension-repair.pdf"
     },
     {
         "id": 11,
         "thumb": "service-6.jpg",
         "icon": "icon-6.png",
         "title": "Key Programming",
-        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros"
+        "text": "Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros",
+        "brochure": "/brochures/key-programming.pdf"
     }
 ]
