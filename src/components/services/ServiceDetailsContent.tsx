@@ -58,57 +58,63 @@ const ServiceDetailsContent = ({ serviceInfo } : { serviceInfo:serviceInfoData }
                                 <div className="service-details-overview">
                                     <h3 className="mb-0">Why Choose Us</h3>
                                     <p>
-                                        Aliquam eros justo, posuere loborti viverra laoreet matti
-                                        ullamcorper posuere viverra Aliquam an eros justo, posuere
-                                        lobortis viverra laoreet augue mattis fermentum ullamcorper
-                                        viverra laoreet Aliquam eros ju posuere loborti viverra laoreet
-                                        matti ullamcorper posuere viverra .Aliquam eros justo, posu
-                                        obortis non, viverra Aliquam eros justo, posuere loborti viverra
-                                        laoreet matti ullamcorper posuere viverra .Aliquam an eros
-                                        justo, posuere lobortis
+                                        AutoGrid is a modern automobile garage located on Athurugiriya Road, Kottawa, 
+                                        specializing mainly in Hybrid Vehicle Services. We provide professional, reliable, 
+                                        and transparent vehicle care, using advanced diagnostic tools and skilled technicians 
+                                        to ensure your vehicle performs at its best.
                                     </p>
                                     <div className="te-list-item-wrapper">
                                         <div className="te-list-item style-1">
                                               <span className="icon">
                                                 <i className="fa-regular fa-check" />
                                               </span>
-                                            <span className="text">We Put the 'Car' in Caring</span>
+                                            <span className="text">Hybrid Vehicle Specialists</span>
                                         </div>
                                         <div className="te-list-item style-1">
                                               <span className="icon">
                                                 <i className="fa-regular fa-check" />
                                               </span>
-                                            <span className="text">Elite Performance Rehab</span>
+                                            <span className="text">Skilled &amp; Experienced Technicians</span>
                                         </div>
                                         <div className="te-list-item style-1">
                                               <span className="icon">
                                                 <i className="fa-regular fa-check" />
                                               </span>
-                                            <span className="text">Your Road to Reliable Repairs</span>
+                                            <span className="text">Advanced Diagnostic Equipment</span>
                                         </div>
                                         <div className="te-list-item style-1">
                                                   <span className="icon">
                                                     <i className="fa-regular fa-check" />
                                                   </span>
-                                            <span className="text">Precision in Every Piston</span>
+                                            <span className="text">Genuine &amp; Quality Spare Parts</span>
+                                        </div>
+                                        <div className="te-list-item style-1">
+                                                  <span className="icon">
+                                                    <i className="fa-regular fa-check" />
+                                                  </span>
+                                            <span className="text">Affordable &amp; Transparent Pricing</span>
+                                        </div>
+                                        <div className="te-list-item style-1">
+                                                  <span className="icon">
+                                                    <i className="fa-regular fa-check" />
+                                                  </span>
+                                            <span className="text">Customer-First Service Approach</span>
                                         </div>
                                     </div>
                                     <p>
-                                        Aliquam eros justo, posuere loborti viverra laoreet matti ullam
-                                        corper posuere viverra .Aliquam eros justo, posuere lobortis
-                                        viverra laoreet augue mattis fermentum ullamcorper viverra
-                                        laoreet Aliquas justo, posuere loborti viverra laoreet matti
-                                        ullamcorper posuere viverra
+                                        From engine tune-ups to hybrid battery replacement, ABS brake systems, dual clutch 
+                                        repairs, and full vehicle servicing, AutoGrid is your trusted partner for complete 
+                                        automobile solutions. We are committed to building long-term relationships with our 
+                                        customers through trust, performance, and exceptional service quality.
                                     </p>
                                     <div className="content">
                                         <h4>Repairs &amp; Upgrades</h4>
                                         <p>
-                                            Aliquam eros justo, posuere loborti vive rra laoreet matti
-                                            ullamc orper posu ere viverra .Aliquam eros justo, posuer
-                                            lobortis non, vive rra laoreet augue mattis fermentum
-                                            ullamcorper viverra laore Aliquam eros justo, posuere
-                                            loviverra laoreet mat ullamcorper posue viverra .Aliquam eros
-                                            justo, posuere lobor
+                                            Our comprehensive service range includes engine tune-ups, hybrid battery replacement, 
+                                            ABS brake system repairs, dual clutch repairs, and complete vehicle servicing. 
+                                            With our specialized expertise in hybrid vehicles and state-of-the-art diagnostic 
+                                            equipment, we ensure your vehicle receives the highest quality care and maintenance 
+                                            it deserves.
                                         </p>
                                     </div>
                                 </div>
