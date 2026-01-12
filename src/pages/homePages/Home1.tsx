@@ -33,7 +33,7 @@ const Home1 = () => {
             <TeamV1 />
             <AppointmentFormV1 />
             <CtaV1 />
-            <BlogV1 />
+            {/* <BlogV1 /> */}
             <FooterV1 />
         </>
     );
