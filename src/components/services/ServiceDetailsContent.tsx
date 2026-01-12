@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import FeatureV1Data from '../../jsonData/latestService/LatestServiceV1Data.json';
 
 type serviceInfoData = {
     title: string;
@@ -127,24 +128,11 @@ const ServiceDetailsContent = ({ serviceInfo } : { serviceInfo:serviceInfoData }
                                         <h4 className="wp-block-heading">Services List</h4>
                                     </div>
                                     <ul>
-                                        <li>
-                                            <Link to="#">Gearbox Guru</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="#">Turbo Tech Services</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="#">Pro Drive Repairs</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="#">Consumer Sector</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="#">Apex Auto Clinic</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="#">Precision Auto</Link>
-                                        </li>
+                                        {FeatureV1Data.map((service) => (
+                                            <li key={service.id}>
+                                                <Link to={`/service-details/${service.id}`}>{service.title}</Link>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                                 <div className="widget te_widget_pdf">
