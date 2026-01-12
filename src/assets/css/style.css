@@ -9099,8 +9099,18 @@ ul.children {
 .te-team-member-slider .slick-list {
   margin: 0 -15px;
 }
+.te-team-member-slider .slick-list .slick-track {
+  display: flex;
+  align-items: flex-start;
+  line-height: 0;
+}
+.te-team-member-slider .slick-list .slick-slide {
+  line-height: 0;
+  height: auto;
+}
 .te-team-member-slider .slick-list .slick-slider-item {
   margin: 0 15px;
+  line-height: 0;
 }
 .te-team-member-slider .slick-list .slick-slider-item .te-team-card {
   width: 410px;

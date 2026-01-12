@@ -28,6 +28,18 @@
     width: unset;
     height: unset;
 }
+.te-team-member-slider .slick-list .slick-track {
+    display: flex;
+    align-items: flex-start;
+    line-height: 0;
+}
+.te-team-member-slider .slick-list .slick-slide {
+    line-height: 0;
+    height: auto;
+}
+.te-team-member-slider .slick-list .slick-slider-item {
+    line-height: 0;
+}
 .latest-service-slider .slick-dots li button:before,
 .te-team-member-slider .slick-dots li button:before
 {
