@@ -6,21 +6,24 @@ const FooterBottomV1 = () => {
         <>
             <div className="te-footer-bottom-wrapper">
                 <div className="te-copyright-text">
-                    <p>&copy; <Link to="#">Automec</Link> {(new Date().getFullYear())} | All Rights Reserved</p>
+                    <p>&copy; <Link to="#">AutoGrid</Link> {(new Date().getFullYear())} | All Rights Reserved</p>
                 </div>
-                <div className="te-footer-bottom-menu">
+                <div className="te-footer-bottom-text text-white">
+                    <p>Designed & Developed by <Link className='text-white font-weight-bold' to="https://deviitor.com" target="_blank">Deviitor.com</Link></p>
+                </div>
+                {/* <div className="te-footer-bottom-menu">
                     <ul>
                         <li>
-                            <Link to="#">Terms & Condition</Link>
+                            <Link to="/">Terms & Condition</Link>
                         </li>
                         <li>
-                            <Link to="#">Privacy Policy</Link>
+                            <Link to="/">Privacy Policy</Link>
                         </li>
                         <li>
-                            <Link to="#">Contact Us</Link>
+                            <Link to="/contact">Contact Us</Link>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </>
     );
