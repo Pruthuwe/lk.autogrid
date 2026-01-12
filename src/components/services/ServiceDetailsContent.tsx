@@ -4,9 +4,10 @@ import FeatureV1Data from '../../jsonData/latestService/LatestServiceV1Data.json
 
 type serviceInfoData = {
     title: string;
+    text: string;
 }
 const ServiceDetailsContent = ({ serviceInfo } : { serviceInfo:serviceInfoData }) => {
-    const { title } = serviceInfo
+    const { title,text } = serviceInfo
     return (
         <>
             {/* Service Details Page Start !*/}
@@ -28,14 +29,7 @@ const ServiceDetailsContent = ({ serviceInfo } : { serviceInfo:serviceInfoData }
                                         </div>
                                         <div className="text">
                                             <p>
-                                                Aliquam eros justo, posuere loborti viverra laoreet matti
-                                                ullamcorper posuere viverra Aliquam an eros justo, posuere
-                                                lobortis viverra laoreet augue mattis fermentum ullamcorper
-                                                viverra laoreet Aliquam eros ju posuere loborti viverra
-                                                laoreet matti ullamcorper posuere viverra .Aliquam eros
-                                                justo, posu obortis non, viverra Aliquam eros justo, posuere
-                                                loborti viverra laoreet matti ullamcorper posuere viverra
-                                                .Aliquam an eros justo, posuere lobortis
+                                                {text}
                                             </p>
                                         </div>
                                     </div>
@@ -61,7 +55,7 @@ const ServiceDetailsContent = ({ serviceInfo } : { serviceInfo:serviceInfoData }
                                     </div>
                                 </div>
                                 <div className="service-details-overview">
-                                    <h3 className="mb-0">We Make Your Ideas Shine</h3>
+                                    <h3 className="mb-0">Why Choose Us</h3>
                                     <p>
                                         Aliquam eros justo, posuere loborti viverra laoreet matti
                                         ullamcorper posuere viverra Aliquam an eros justo, posuere
