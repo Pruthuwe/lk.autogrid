@@ -16,10 +16,10 @@ const CtaV1 = () => {
                                     </div>
                                     <div className="te-content-wrapper">
                                         <h2 className="te-cta-title text-white">
-                                            Need help? Call us Today <br /> +201- 555-0124
+                                            Need help? Call us Today <br /> +91 12 844 722
                                         </h2>
                                         <p className="text text-white">
-                                            Lorem Ipsum is simply dummy text of the printing{" "}
+                                            We are here to help you with your vehicle needs.
                                         </p>
                                     </div>
                                 </div>
