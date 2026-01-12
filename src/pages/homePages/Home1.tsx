@@ -24,7 +24,8 @@ const Home1 = () => {
             <LatestServiceV1 />
             <BrandV1 />
             <AboutV1 />
-            <ProjectV1 />
+            {/* <ProjectV1 /> */}
+            <div style={{ height: '100px' }}></div>
             <MarqueeSliderV1 />
             <PricingPlans />
             <TestimonialV1 />
