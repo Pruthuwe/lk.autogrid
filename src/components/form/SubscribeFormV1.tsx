@@ -12,9 +12,9 @@ const SubscribeFormV1 = () => {
                         </div>
                         <div className="col-lg-6 align-self-center">
                             <div className="te-content-wrapper">
-                                <h2 className="te-subscribe-title text-white">Get Free Estimate</h2>
+                                <h2 className="te-subscribe-title text-white">Subscribe to our newsletter</h2>
                                 <p className="text text-white">
-                                    Lorem Ipsum is simply is dumiomy is text Lorem Ipsum{" "}
+                                    Subscribe to our newsletter to get the latest news and updates about our services.
                                 </p>
                                 <div className="te-subscribe-form-wrapper">
                                     <div className="te-subscribe-form-widget style-2">
