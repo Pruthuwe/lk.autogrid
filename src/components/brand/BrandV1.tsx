@@ -36,70 +36,35 @@ const BrandV1 = () => {
                         <div className="slick-item">
                             <div className="client-logo-wrapper">
                                 <div className="client-logo">
-                                    <img src="images/brand-logo/client-1.png" alt="logo" />
+                                    <img src="images/brand-logo/toyota.png" alt="logo" />
                                 </div>
                             </div>
                         </div>
                         <div className="slick-item">
                             <div className="client-logo-wrapper">
                                 <div className="client-logo">
-                                    <img src="images/brand-logo/client-2.png" alt="logo" />
+                                    <img src="images/brand-logo/nissan.png" alt="logo" />
                                 </div>
                             </div>
                         </div>
                         <div className="slick-item">
                             <div className="client-logo-wrapper">
                                 <div className="client-logo">
-                                    <img src="images/brand-logo/client-3.png" alt="logo" />
+                                    <img src="images/brand-logo/kia.png" alt="logo" />
                                 </div>
                             </div>
                         </div>
                         <div className="slick-item">
                             <div className="client-logo-wrapper">
                                 <div className="client-logo">
-                                    <img src="images/brand-logo/client-4.png" alt="logo" />
+                                    <img src="images/brand-logo/honda.png" alt="logo" />
                                 </div>
                             </div>
                         </div>
                         <div className="slick-item">
                             <div className="client-logo-wrapper">
                                 <div className="client-logo">
-                                    <img src="images/brand-logo/client-5.png" alt="logo" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slick-item">
-                            <div className="client-logo-wrapper">
-                                <div className="client-logo">
-                                    <img src="images/brand-logo/client-1.png" alt="logo" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slick-item">
-                            <div className="client-logo-wrapper">
-                                <div className="client-logo">
-                                    <img src="images/brand-logo/client-2.png" alt="logo" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slick-item">
-                            <div className="client-logo-wrapper">
-                                <div className="client-logo">
-                                    <img src="images/brand-logo/client-3.png" alt="logo" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slick-item">
-                            <div className="client-logo-wrapper">
-                                <div className="client-logo">
-                                    <img src="images/brand-logo/client-4.png" alt="logo" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="slick-item">
-                            <div className="client-logo-wrapper">
-                                <div className="client-logo">
-                                    <img src="images/brand-logo/client-5.png" alt="logo" />
+                                    <img src="images/brand-logo/suzuki.png" alt="logo" />
                                 </div>
                             </div>
                         </div>
