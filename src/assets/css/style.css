@@ -8893,9 +8893,11 @@ ul.children {
   margin-bottom: 30px;
 }
 .te-comment-respond input:focus,
+.te-comment-respond select:focus,
 .te-comment-respond textarea:focus,
 .te-comment-respond .form-select:focus,
 .comment-respond input:focus,
+.comment-respond select:focus,
 .comment-respond textarea:focus,
 .comment-respond .form-select:focus {
   outline: none !important;
@@ -8915,9 +8917,38 @@ ul.children {
   border-radius: 5px;
 }
 .te-comment-respond.style-2 input,
+.te-comment-respond.style-2 select,
 .te-comment-respond.style-2 textarea {
   border-color: #232323 !important;
   background-color: transparent;
+  color: #ffffff;
+}
+.te-comment-respond.style-2 *::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.te-comment-respond.style-2 *:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+.te-comment-respond.style-2 *::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+.te-comment-respond.style-2 *:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.te-comment-respond.style-2 *::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.te-comment-respond.style-2 *::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.te-comment-respond.style-2 select option {
+  background-color: #171717;
+  color: #ffffff;
+}
+.te-comment-respond.style-2 select option:disabled {
+  color: rgba(255, 255, 255, 0.7);
 }
 .te-comment-respond.style-2 textarea {
   height: 185px;
@@ -8938,9 +8969,38 @@ ul.children {
   }
 }
 .te-comment-respond.style-3 input,
+.te-comment-respond.style-3 select,
 .te-comment-respond.style-3 textarea {
   background-color: #232323;
   border-color: #232323 !important;
+  color: #ffffff;
+}
+.te-comment-respond.style-3 *::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.te-comment-respond.style-3 *:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+.te-comment-respond.style-3 *::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+.te-comment-respond.style-3 *:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.te-comment-respond.style-3 *::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.te-comment-respond.style-3 *::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.te-comment-respond.style-3 select option {
+  background-color: #232323;
+  color: #ffffff;
+}
+.te-comment-respond.style-3 select option:disabled {
+  color: rgba(255, 255, 255, 0.7);
 }
 .te-comment-respond.style-3 textarea {
   height: 185px;

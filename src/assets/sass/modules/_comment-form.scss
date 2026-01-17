@@ -167,6 +167,7 @@
     margin-bottom: 30px;
   }
   input:focus,
+  select:focus,
   textarea:focus,
   .form-select:focus{
     outline: none !important;
@@ -188,9 +189,42 @@
     padding: 40px 60px;
     border-radius: 5px;
     input,
+    select,
     textarea {
       border-color: #232323 !important;
       background-color: transparent;
+      color: $white;
+    }
+
+    *::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    *:-moz-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+      opacity: 1;
+    }
+    *::-moz-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+      opacity: 1;
+    }
+    *:-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    *::-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    *::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    select {
+      option {
+        background-color: $black;
+        color: $white;
+      }
+      option:disabled {
+        color: rgba(255, 255, 255, 0.7);
+      }
     }
 
     textarea {
@@ -213,10 +247,44 @@
     }
 
     input,
+    select,
     textarea {
       background-color: #232323;
       border-color: #232323 !important;
+      color: $white;
     }
+
+    *::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    *:-moz-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+      opacity: 1;
+    }
+    *::-moz-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+      opacity: 1;
+    }
+    *:-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    *::-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    *::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    select {
+      option {
+        background-color: #232323;
+        color: $white;
+      }
+      option:disabled {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
     textarea {
       height: 185px;
     }
