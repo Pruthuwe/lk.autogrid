@@ -20,8 +20,8 @@ const ContactInfo = () => {
                         <div className="content">
                             <h3 className="title">Location</h3>
                             <span className="desc">
-                                                    Dhaka 102, utl 1216, road 45 house of street
-                                                  </span>
+                                246 Athurugiriya Road, Malapalla, Kottawa.
+                            </span>
                         </div>
                     </div>
                     <div className="te-icon-card style-2">
@@ -30,11 +30,8 @@ const ContactInfo = () => {
                         </div>
                         <div className="content">
                             <h3 className="title">Phone number</h3>
-                            <Link to="tel:0123456789" className="desc">
-                                +88 0123456789
-                            </Link>
-                            <Link to="tel:0123456789" className="desc">
-                                1234 - 000 - 000{" "}
+                            <Link to="tel:+9112844722" className="desc">
+                                +91 12 844 722
                             </Link>
                         </div>
                     </div>
@@ -44,8 +41,8 @@ const ContactInfo = () => {
                         </div>
                         <div className="content">
                             <h3 className="title">Emails</h3>
-                            <Link to="mailto:info@exampleyourmail.com" className="desc">
-                                info@exampleyourmail.com
+                            <Link to="mailto:info@autogrid.lk" className="desc">
+                                info@autogrid.lk
                             </Link>
                         </div>
                     </div>
