@@ -25,11 +25,8 @@ const SinglePricingPlans = ({ item, index } : {item:PricingCardData; index: numb
     const delay = index * 0.2;
 
     return (
-
-        <>
-
+        <div className="price-card-wrapper">
             <motion.div
-                className="col-md-6 col-lg-4 price-card-wrapper"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -48,9 +45,9 @@ const SinglePricingPlans = ({ item, index } : {item:PricingCardData; index: numb
                                 <p className="price-desc">{price.price_desc}</p>
                             </div>
                         </div>
-                        <div className="price-header-icon">
+                        {/* <div className="price-header-icon">
                             <img src="../../images/icon/price-card/icon-2.png" alt="icon" />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="list-wrapper">
                         <div className="list">
@@ -67,7 +64,7 @@ const SinglePricingPlans = ({ item, index } : {item:PricingCardData; index: numb
                     <Link to="/" className="price-btn">Get Started <i className="fa-solid fa-arrow-right"></i></Link>
                 </div>
             </motion.div>
-            </>
+        </div>
     );
 };
 

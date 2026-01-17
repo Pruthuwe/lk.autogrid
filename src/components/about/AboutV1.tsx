@@ -26,9 +26,7 @@ const AboutV1 = () => {
                                             </h2>
                                             <div className="te-section-desc text-white">
                                                 <p>
-                                                    Et purus duis sollicitudin dignissim habitant. Egestas nulla
-                                                    quis venenatis cras sed Et purus duis sollicitudin dignissim
-                                                    habitan
+                                                    At Automec, we are committed to building long-term relationships with our customers through trust, performance, and exceptional service quality. Our comprehensive service range includes engine tune-ups, hybrid battery replacement, ABS brake system repairs, dual clutch repairs, and complete vehicle servicing. With our specialized expertise and state-of-the-art diagnostic equipment, we ensure your vehicle receives the highest quality care it deserves.
                                                 </p>
                                             </div>
                                         </div>
@@ -41,8 +39,7 @@ const AboutV1 = () => {
                                             <div className="content">
                                                 <h3 className="title">Air Conditioning Maintenance</h3>
                                                 <span className="desc">
-                    Et purus duis sollicitudin dignissim habitant. Egestas nulla
-                    quis venenatis cras sed Et purus duis sollicitudin
+                    Professional AC system diagnostics, repair, and maintenance to keep you comfortable year-round. Our expert technicians ensure optimal cooling performance and air quality.
                   </span>
                                             </div>
                                         </div>
@@ -53,8 +50,7 @@ const AboutV1 = () => {
                                             <div className="content">
                                                 <h3 className="title">Oil Change &amp; Filter Replacement</h3>
                                                 <span className="desc">
-                    Et purus duis sollicitudin dignissim habitant. Egestas nulla
-                    quis venenatis cras sed Et purus duis sollicitudin
+                    Regular oil changes and filter replacements are essential for engine longevity. We use premium quality oils and genuine filters to protect your engine and improve performance.
                   </span>
                                             </div>
                                         </div>

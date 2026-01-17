@@ -1,59 +1,182 @@
 [
   {
     "id": 1,
-    "sub_title": "Starter",
-    "title": "Essential Care",
+    "sub_title": "Basic",
+    "title": "Essential Service",
     "price": {
-      "currency": "$",
-      "price": "29",
-      "under_dot": "99",
-      "price_desc": "/mo"
+      "currency": "LKR",
+      "price": "2,500",
+      "under_dot": "",
+      "price_desc": "/service"
     },
     "list": [
-      { "icon": "fa-light fa-check", "text": "Oil change (1x/month)" },
+      { "icon": "fa-light fa-check", "text": "Basic oil change" },
       { "icon": "fa-light fa-check", "text": "Tire pressure check" },
-      { "icon": "fa-light fa-check", "text": "Battery health report" },
+      { "icon": "fa-light fa-check", "text": "Battery health check" },
       { "icon": "fa-thin fa-xmark", "text": "Brake inspection" },
-      { "icon": "fa-thin fa-xmark", "text": "Engine diagnostics" },
-      { "icon": "fa-thin fa-xmark", "text": "Roadside assistance" }
+      { "icon": "fa-thin fa-xmark", "text": "Engine diagnostics" }
     ]
   },
   {
     "id": 2,
-    "sub_title": "Professional",
-    "title": "Advanced Care",
+    "sub_title": "Standard",
+    "title": "Regular Maintenance",
     "price": {
-      "currency": "$",
-      "price": "149",
-      "under_dot": "99",
-      "price_desc": "/mo"
+      "currency": "LKR",
+      "price": "5,000",
+      "under_dot": "",
+      "price_desc": "/service"
     },
     "list": [
-      { "icon": "fa-light fa-check", "text": "Oil change (2x/month)" },
-      { "icon": "fa-light fa-check", "text": "Full vehicle inspection" },
-      { "icon": "fa-light fa-check", "text": "Brake inspection & service" },
-      { "icon": "fa-light fa-check", "text": "Engine diagnostics" },
-      { "icon": "fa-thin fa-xmark", "text": "Towing service" },
-      { "icon": "fa-thin fa-xmark", "text": "Loaner car availability" }
+      { "icon": "fa-light fa-check", "text": "Full oil change" },
+      { "icon": "fa-light fa-check", "text": "Air filter replacement" },
+      { "icon": "fa-light fa-check", "text": "Tire rotation" },
+      { "icon": "fa-light fa-check", "text": "Battery check" },
+      { "icon": "fa-thin fa-xmark", "text": "Brake service" }
     ]
   },
   {
     "id": 3,
-    "sub_title": "Enterprise",
-    "title": "Premium Auto Care",
+    "sub_title": "Premium",
+    "title": "Complete Care",
     "price": {
-      "currency": "$",
-      "price": "399",
-      "under_dot": "99",
-      "price_desc": "/mo"
+      "currency": "LKR",
+      "price": "8,500",
+      "under_dot": "",
+      "price_desc": "/service"
     },
     "list": [
-      { "icon": "fa-light fa-check", "text": "Unlimited oil changes" },
-      { "icon": "fa-light fa-check", "text": "Brake & engine service included" },
-      { "icon": "fa-light fa-check", "text": "Towing & roadside assistance" },
-      { "icon": "fa-light fa-check", "text": "Loaner car while servicing" },
-      { "icon": "fa-light fa-check", "text": "Priority booking & service" },
-      { "icon": "fa-light fa-check", "text": "Annual car detailing" }
+      { "icon": "fa-light fa-check", "text": "Premium oil change" },
+      { "icon": "fa-light fa-check", "text": "Full vehicle inspection" },
+      { "icon": "fa-light fa-check", "text": "Brake inspection" },
+      { "icon": "fa-light fa-check", "text": "Engine diagnostics" },
+      { "icon": "fa-light fa-check", "text": "Fluid top-up" }
+    ]
+  },
+  {
+    "id": 4,
+    "sub_title": "Advanced",
+    "title": "Professional Service",
+    "price": {
+      "currency": "LKR",
+      "price": "12,000",
+      "under_dot": "",
+      "price_desc": "/service"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Synthetic oil change" },
+      { "icon": "fa-light fa-check", "text": "Complete brake service" },
+      { "icon": "fa-light fa-check", "text": "Engine tune-up" },
+      { "icon": "fa-light fa-check", "text": "Transmission service" },
+      { "icon": "fa-light fa-check", "text": "AC system check" }
+    ]
+  },
+  {
+    "id": 5,
+    "sub_title": "Deluxe",
+    "title": "Comprehensive Package",
+    "price": {
+      "currency": "LKR",
+      "price": "18,000",
+      "under_dot": "",
+      "price_desc": "/service"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Full service package" },
+      { "icon": "fa-light fa-check", "text": "Brake pad replacement" },
+      { "icon": "fa-light fa-check", "text": "Engine diagnostics" },
+      { "icon": "fa-light fa-check", "text": "Suspension check" },
+      { "icon": "fa-light fa-check", "text": "Wheel alignment" }
+    ]
+  },
+  {
+    "id": 6,
+    "sub_title": "Ultimate",
+    "title": "Premium Maintenance",
+    "price": {
+      "currency": "LKR",
+      "price": "25,000",
+      "under_dot": "",
+      "price_desc": "/service"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Premium synthetic oil" },
+      { "icon": "fa-light fa-check", "text": "Complete brake overhaul" },
+      { "icon": "fa-light fa-check", "text": "Full engine service" },
+      { "icon": "fa-light fa-check", "text": "Transmission flush" },
+      { "icon": "fa-light fa-check", "text": "AC service & recharge" }
+    ]
+  },
+  {
+    "id": 7,
+    "sub_title": "Elite",
+    "title": "Master Service",
+    "price": {
+      "currency": "LKR",
+      "price": "35,000",
+      "under_dot": "",
+      "price_desc": "/service"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Master technician service" },
+      { "icon": "fa-light fa-check", "text": "Complete brake system" },
+      { "icon": "fa-light fa-check", "text": "Engine overhaul prep" },
+      { "icon": "fa-light fa-check", "text": "Full suspension service" },
+      { "icon": "fa-light fa-check", "text": "Electrical system check" }
+    ]
+  },
+  {
+    "id": 8,
+    "sub_title": "Platinum",
+    "title": "Executive Care",
+    "price": {
+      "currency": "LKR",
+      "price": "45,000",
+      "under_dot": "",
+      "price_desc": "/service"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Executive service package" },
+      { "icon": "fa-light fa-check", "text": "Premium brake components" },
+      { "icon": "fa-light fa-check", "text": "Advanced diagnostics" },
+      { "icon": "fa-light fa-check", "text": "Performance optimization" },
+      { "icon": "fa-light fa-check", "text": "Interior detailing" }
+    ]
+  },
+  {
+    "id": 9,
+    "sub_title": "Diamond",
+    "title": "Luxury Service",
+    "price": {
+      "currency": "LKR",
+      "price": "60,000",
+      "under_dot": "",
+      "price_desc": "/service"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Luxury service experience" },
+      { "icon": "fa-light fa-check", "text": "Premium parts & fluids" },
+      { "icon": "fa-light fa-check", "text": "Complete vehicle restoration" },
+      { "icon": "fa-light fa-check", "text": "Paint protection" },
+      { "icon": "fa-light fa-check", "text": "Loaner vehicle included" }
+    ]
+  },
+  {
+    "id": 10,
+    "sub_title": "Supreme",
+    "title": "Ultimate Care",
+    "price": {
+      "currency": "LKR",
+      "price": "85,000",
+      "under_dot": "",
+      "price_desc": "/service"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Ultimate service package" },
+      { "icon": "fa-light fa-check", "text": "All premium services" },
+      { "icon": "fa-light fa-check", "text": "Complete vehicle makeover" },
+      { "icon": "fa-light fa-check", "text": "Extended warranty coverage" },
+      { "icon": "fa-light fa-check", "text": "VIP treatment & priority" }
     ]
   }
 ]

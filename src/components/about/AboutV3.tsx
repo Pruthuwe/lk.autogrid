@@ -22,10 +22,7 @@ const AboutV3 = ({ style } : AddStyleProps) => {
                                     </h2>
                                     <div className="te-section-desc">
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit platea
-                                            pharetra, nostra mattis hendrerit proin mollis pretium
-                                            facilisi in, ligula volutpat lobortis molestie sed design
-                                            accumsan conubia. Sed design by
+                                            At Automec, we combine years of automotive expertise with cutting-edge technology to deliver reliable and efficient vehicle repair services. Our skilled technicians specialize in hybrid vehicles, modern diagnostic systems, and comprehensive maintenance solutions. We are dedicated to providing transparent pricing, quality service, and building lasting relationships with every customer who trusts us with their vehicle.
                                         </p>
                                     </div>
                                     <div className="te-list-item-wrapper">

@@ -27,9 +27,7 @@ const SliderV1 = () => {
                                                     Mastering the Art of Auto Repair
                                                 </h1>
                                                 <p className="te-slider-short-desc">
-                                                    Et purus duis sollicitudin dignissim habitant. Egestas
-                                                    nulla quis venenatis cras sed Et purus duis sollicitudin
-                                                    dignissim habitant. Egestas{" "}
+                                                    Your trusted partner for comprehensive automotive solutions. From engine tune-ups to hybrid battery replacement, ABS brake systems, and complete vehicle servicing, we deliver expert care with state-of-the-art diagnostic equipment and genuine parts. Experience exceptional service quality that keeps your vehicle running smoothly and efficiently.
                                                 </p>
                                                 <div className="te-slider-btn-wrapper">
                                                     <Link to="/contact" className="te-theme-btn style-2">
