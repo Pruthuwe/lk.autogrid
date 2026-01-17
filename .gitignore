@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Email configuration (contains sensitive credentials)
+api/config.php
+api/rate_limit_*.txt

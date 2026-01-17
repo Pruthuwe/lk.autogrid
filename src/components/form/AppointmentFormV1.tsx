@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LatestServiceV1Data from "../../jsonData/latestService/LatestServiceV1Data.json";
+import { submitQuoteForm } from "../../services/emailService";
 
 const AppointmentFormV1 = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,11 @@ const AppointmentFormV1 = () => {
     service: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{
+    type: "success" | "error" | null;
+    text: string;
+  }>({ type: null, text: "" });
 
   const vehicleTypes = ["Car", "SUV", "Van", "Truck", "Motorcycle", "Other"];
   const vehicleBrands = [
@@ -36,10 +42,48 @@ const AppointmentFormV1 = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitMessage({ type: null, text: "" });
+
+    try {
+      const response = await submitQuoteForm(formData);
+      
+      if (response.success) {
+        setSubmitMessage({
+          type: "success",
+          text: response.message || "Form submitted successfully! We will contact you soon.",
+        });
+        // Reset form
+        setFormData({
+          vehicleType: "",
+          brand: "",
+          vehicleModel: "",
+          name: "",
+          email: "",
+          number: "",
+          service: "",
+          message: "",
+        });
+        // Clear message after 5 seconds
+        setTimeout(() => {
+          setSubmitMessage({ type: null, text: "" });
+        }, 5000);
+      } else {
+        setSubmitMessage({
+          type: "error",
+          text: response.message || "Failed to submit form. Please try again.",
+        });
+      }
+    } catch (error) {
+      setSubmitMessage({
+        type: "error",
+        text: "An error occurred. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -186,8 +230,27 @@ const AppointmentFormV1 = () => {
                       </div>
                     </div>
                     <div className="col-12">
-                      <button className="te-theme-btn" type="submit">
-                        SEND NOW
+                      {submitMessage.type && (
+                        <div
+                          className={`mb-3 p-3 ${
+                            submitMessage.type === "success"
+                              ? "text-white bg-success"
+                              : "text-white bg-danger"
+                          }`}
+                          style={{
+                            borderRadius: "5px",
+                            fontSize: "14px",
+                          }}
+                        >
+                          {submitMessage.text}
+                        </div>
+                      )}
+                      <button
+                        className="te-theme-btn"
+                        type="submit"
+                        disabled={isSubmitting}
+                      >
+                        {isSubmitting ? "SENDING..." : "SEND NOW"}
                       </button>
                     </div>
                   </div>
