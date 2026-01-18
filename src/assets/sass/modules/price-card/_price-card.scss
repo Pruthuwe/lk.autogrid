@@ -41,6 +41,63 @@
     }
 
   }
+  &.package-black {
+    background-color: $gray-900;
+
+    .card-title .title,
+    .price .price-heading,
+    .price .price-desc,
+    .list ul li {
+      color: $white;
+    }
+    .price-header {
+      border-color: $gray-700;
+
+      .price-header-icon {
+        background-color: #232323;
+      }
+    }
+    .price-btn {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: $white;
+    }
+    .card-title .sub-title {
+      color: $gray-300;
+    }
+  }
+  &.package-gray {
+    background-color: $gray-100;
+
+    .card-title .title,
+    .price .price-heading,
+    .list ul li {
+      color: $black;
+    }
+    .price .price-desc {
+      color: $gray-800;
+    }
+    .price-header {
+      border-color: $gray-200;
+
+      .price-header-icon {
+        background-color: $gray-200;
+      }
+    }
+    .price-btn {
+      background-color: transparent;
+      border-color: $primary-color;
+      color: $black;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
+    .card-title .sub-title {
+      color: $text-color;
+    }
+  }
   .price-btn {
     display: block;
     border-radius: 5px;

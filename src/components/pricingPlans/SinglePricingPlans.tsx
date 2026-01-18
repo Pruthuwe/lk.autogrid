@@ -23,6 +23,7 @@ const SinglePricingPlans = ({ item, index } : {item:PricingCardData; index: numb
 
     const { title, price, list } = item;
     const delay = index * 0.2;
+    const isBlack = index % 2 === 0; // Even indices (0, 2, 4...) = black, odd indices (1, 3, 5...) = gray
 
     return (
         <div className="price-card-wrapper">
@@ -32,7 +33,7 @@ const SinglePricingPlans = ({ item, index } : {item:PricingCardData; index: numb
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ delay, duration: 0.6, ease: "easeOut" }}
             >
-                <div className={`price-card style-1 ${index === 0 ? 'active' : ''}`}>
+                <div className={`price-card style-1 ${isBlack ? 'package-black' : 'package-gray'}`}>
                     <div className="price-header">
                         <div className="price-header-content">
                             <div className="card-title">

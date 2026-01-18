@@ -3665,7 +3665,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #EB3300;
 }
 .te-header-btn .te-quote-btn:hover {
-  background-color: #ffffff;
   color: #171717;
   transition: all 0.5s ease-out;
 }
@@ -3718,481 +3717,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 .te-search-form-wrapper .te-search-form-inner .te-search-form .te-search-form-input .te-search-icon {
   display: flex;
 }
-/* Quote Modal Styles */
-.te-quote-modal-overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  z-index: 9999;
-  visibility: hidden;
-  transition: all 0.5s ease-out;
-}
-
-.te-quote-modal-overlay.active {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.5s ease-out;
-}
-
-.te-quote-modal-wrapper {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease-out;
-  pointer-events: none;
-  overflow-x: hidden;
-}
-
-.te-quote-modal-wrapper.active {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.te-quote-modal-inner {
-  width: 100%;
-  max-width: 900px;
-  position: relative;
-  padding: 15px;
-  max-height: 95vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.te-quote-modal-content {
-  background: #FFFFFF;
-  box-shadow: 0px 30px 70px rgba(208, 225, 242, 0.3);
-  border-radius: 5px;
-  padding: 30px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-.te-quote-modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #dfe2e9;
-  flex-shrink: 0;
-}
-
-.te-quote-modal-header h3 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 700;
-  color: #171717;
-}
-
-.te-quote-modal-close {
-  background: none;
-  border: none;
-  font-size: 20px;
-  color: #171717;
-  cursor: pointer;
-  padding: 5px 10px;
-  transition: all 0.3s ease-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.te-quote-modal-close:hover {
-  background-color: #f5f5f5;
-  color: #EB3300;
-  transition: all 0.3s ease-out;
-}
-
-.te-quote-modal-body {
-  width: 100%;
-  overflow-x: hidden;
-  flex: 1;
-  min-height: 0;
-  box-sizing: border-box;
-}
-
-/* Quote Form Modal Styles */
-.te-quote-form-modal {
-  width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-.te-quote-form {
-  width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-.te-quote-form .row {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-}
-
-.te-quote-form .row > [class*="col-"] {
-  padding-left: 8px;
-  padding-right: 8px;
-  box-sizing: border-box;
-}
-
-.te-quote-form-section {
-  margin-bottom: 25px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e8e8e8;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-.te-quote-form-section:last-of-type {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.te-quote-form-section-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #171717;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.te-quote-form-section-title i {
-  color: #EB3300;
-  font-size: 18px;
-}
-
-.te-quote-form-group {
-  margin-bottom: 0;
-}
-
-.te-quote-form-group label {
-  display: block;
-  font-size: 13px;
-  font-weight: 500;
-  color: #171717;
-  margin-bottom: 6px;
-  line-height: 1.4;
-}
-
-.te-quote-form-control {
-  width: 100%;
-  max-width: 100%;
-  padding: 10px 14px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #171717;
-  background-color: #fff;
-  border: 1px solid #d0d0d0;
-  border-radius: 4px;
-  transition: all 0.3s ease-out;
-  font-family: inherit;
-  box-sizing: border-box;
-}
-
-.te-quote-form-control:focus {
-  outline: none;
-  border-color: #EB3300;
-  box-shadow: 0 0 0 3px rgba(235, 51, 0, 0.1);
-}
-
-.te-quote-form-control::placeholder {
-  color: #999;
-  opacity: 1;
-}
-
-.te-quote-form-control select {
-  cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 35px;
-}
-
-.te-quote-form-control textarea {
-  resize: vertical;
-  min-height: 80px;
-  font-family: inherit;
-}
-
-.te-quote-form-submit {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #e8e8e8;
-}
-
-.te-quote-form-message {
-  padding: 12px 15px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  line-height: 1.5;
-  animation: slideDown 0.3s ease-out;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.te-quote-form-message-success {
-  background-color: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
-}
-
-.te-quote-form-message-error {
-  background-color: #f8d7da;
-  color: #721c24;
-  border: 1px solid #f5c6cb;
-}
-
-.te-quote-form-message i {
-  font-size: 16px;
-}
-
-.te-quote-form-submit .te-theme-btn {
-  width: 100%;
-  padding: 14px 30px;
-  font-size: 15px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: all 0.3s ease-out;
-}
-
-.te-quote-form-submit .te-theme-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.te-quote-form-submit .te-theme-btn i.fa-spinner {
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .te-quote-modal-inner {
-    max-width: 95%;
-    padding: 10px;
-    max-height: 98vh;
-  }
-  
-  .te-quote-modal-content {
-    padding: 20px;
-  }
-  
-  .te-quote-modal-header {
-    margin-bottom: 15px;
-    padding-bottom: 12px;
-  }
-  
-  .te-quote-modal-header h3 {
-    font-size: 20px;
-  }
-  
-  .te-quote-form-section {
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-  }
-  
-  .te-quote-form-section-title {
-    font-size: 15px;
-    margin-bottom: 12px;
-  }
-  
-  .te-quote-form-group label {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  
-  .te-quote-form-control {
-    padding: 9px 12px;
-    font-size: 13px;
-  }
-  
-  .te-quote-form-control textarea {
-    min-height: 70px;
-  }
-  
-  .te-quote-form-submit {
-    margin-top: 15px;
-    padding-top: 15px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .te-quote-modal-inner {
-    max-width: 100%;
-    padding: 5px;
-    max-height: 100vh;
-    overflow-x: hidden;
-  }
-  
-  .te-quote-modal-content {
-    padding: 15px;
-    border-radius: 0;
-    max-height: 100vh;
-    overflow-x: hidden;
-  }
-  
-  .te-quote-form .row > [class*="col-"] {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  
-  .te-quote-modal-header {
-    margin-bottom: 12px;
-    padding-bottom: 10px;
-  }
-  
-  .te-quote-modal-header h3 {
-    font-size: 18px;
-  }
-  
-  .te-quote-modal-close {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-  }
-  
-  .te-quote-form-section {
-    margin-bottom: 18px;
-    padding-bottom: 12px;
-  }
-  
-  .te-quote-form-section-title {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .te-quote-form-section-title i {
-    font-size: 16px;
-  }
-  
-  .te-quote-form-group label {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  
-  .te-quote-form-control {
-    padding: 9px 12px;
-    font-size: 13px;
-  }
-  
-  .te-quote-form-control textarea {
-    min-height: 60px;
-  }
-  
-  .te-quote-form-submit {
-    margin-top: 12px;
-    padding-top: 12px;
-  }
-  
-  .te-quote-form-submit .te-theme-btn {
-    padding: 12px 25px;
-    font-size: 14px;
-  }
-  
-  .te-quote-form-message {
-    padding: 10px 12px;
-    font-size: 13px;
-  }
-}
-
-@media only screen and (max-height: 700px) {
-  .te-quote-modal-inner {
-    max-height: 100vh;
-  }
-  
-  .te-quote-modal-content {
-    padding: 20px;
-  }
-  
-  .te-quote-modal-header {
-    margin-bottom: 12px;
-    padding-bottom: 8px;
-  }
-  
-  .te-quote-form-section {
-    margin-bottom: 15px;
-    padding-bottom: 12px;
-  }
-  
-  .te-quote-form-section-title {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .te-quote-form-group label {
-    font-size: 12px;
-    margin-bottom: 4px;
-  }
-  
-  .te-quote-form-control {
-    padding: 8px 12px;
-    font-size: 13px;
-  }
-  
-  .te-quote-form-control textarea {
-    min-height: 60px;
-  }
-  
-  .te-quote-form-submit {
-    margin-top: 12px;
-    padding-top: 12px;
-  }
-}
-
 .te-search-form-wrapper .te-search-form-inner .te-search-form .te-search-form-input button.te-submit-search-btn {
   padding: 15px 24px !important;
 }
@@ -4414,6 +3938,486 @@ body.admin-bar .header-menu-area.sticky_menu {
   cursor: pointer;
 }
 
+.te-quote-modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: 9999;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+.te-quote-modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
+.te-quote-modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+  pointer-events: none;
+  overflow-x: hidden;
+}
+.te-quote-modal-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.te-quote-modal-inner {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  padding: 15px;
+  max-height: 95vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+@media (max-width: 991px) {
+  .te-quote-modal-inner {
+    max-width: 95%;
+    padding: 10px;
+    max-height: 98vh;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-modal-inner {
+    max-width: 100%;
+    padding: 5px;
+    max-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-modal-inner {
+    max-height: 100vh;
+  }
+}
+
+.te-quote-modal-content {
+  background: #FFFFFF;
+  box-shadow: 0px 30px 70px rgba(208, 225, 242, 0.3);
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+@media (max-width: 991px) {
+  .te-quote-modal-content {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-modal-content {
+    padding: 15px;
+    border-radius: 0;
+    max-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-modal-content {
+    padding: 20px;
+  }
+}
+
+.te-quote-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dfe2e9;
+  flex-shrink: 0;
+}
+@media (max-width: 991px) {
+  .te-quote-modal-header {
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-modal-header {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-modal-header {
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+  }
+}
+.te-quote-modal-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #171717;
+}
+@media (max-width: 991px) {
+  .te-quote-modal-header h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-modal-header h3 {
+    font-size: 18px;
+  }
+}
+
+.te-quote-modal-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #171717;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .te-quote-modal-close {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+.te-quote-modal-close:hover {
+  background-color: #f5f5f5;
+  color: #EB3300;
+  transition: all 0.5s ease-out;
+}
+
+.te-quote-modal-body {
+  width: 100%;
+  overflow-x: hidden;
+  flex: 1;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.te-quote-form-modal {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.te-quote-form {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.te-quote-form .row {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.te-quote-form .row > [class*=col-] {
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .te-quote-form .row > [class*=col-] {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.te-quote-form-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.te-quote-form-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+@media (max-width: 991px) {
+  .te-quote-form-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-form-section {
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-form-section {
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+  }
+}
+
+.te-quote-form-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #171717;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 991px) {
+  .te-quote-form-section-title {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-form-section-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-form-section-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+.te-quote-form-section-title i {
+  color: #EB3300;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .te-quote-form-section-title i {
+    font-size: 16px;
+  }
+}
+
+.te-quote-form-group {
+  margin-bottom: 0;
+}
+.te-quote-form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #171717;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+@media (max-width: 991px) {
+  .te-quote-form-group label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-form-group label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-form-group label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+}
+
+.te-quote-form-control {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #171717;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  transition: all 0.5s ease-out;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .te-quote-form-control {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-form-control {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-form-control {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+.te-quote-form-control:focus {
+  outline: none;
+  border-color: #EB3300;
+  box-shadow: 0 0 0 3px rgba(235, 51, 0, 0.1);
+}
+.te-quote-form-control::placeholder {
+  color: #999;
+  opacity: 1;
+}
+.te-quote-form-control select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 35px;
+}
+.te-quote-form-control textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+@media (max-width: 991px) {
+  .te-quote-form-control textarea {
+    min-height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-form-control textarea {
+    min-height: 60px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-form-control textarea {
+    min-height: 60px;
+  }
+}
+
+.te-quote-form-submit {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e8e8e8;
+}
+@media (max-width: 991px) {
+  .te-quote-form-submit {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .te-quote-form-submit {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .te-quote-form-submit {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+}
+.te-quote-form-submit .te-theme-btn {
+  width: 100%;
+  padding: 14px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.5s ease-out;
+}
+@media (max-width: 768px) {
+  .te-quote-form-submit .te-theme-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+.te-quote-form-submit .te-theme-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.te-quote-form-submit .te-theme-btn i.fa-spinner {
+  animation: spin 1s linear infinite;
+}
+
+.te-quote-form-message {
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  animation: slideDown 0.3s ease-out;
+}
+@media (max-width: 768px) {
+  .te-quote-form-message {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+.te-quote-form-message.te-quote-form-message-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+.te-quote-form-message.te-quote-form-message-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+.te-quote-form-message i {
+  font-size: 16px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .slider-area {
   overflow: hidden;
   position: relative;
@@ -7081,6 +7085,58 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #EB3300;
   border-color: #EB3300;
   color: #ffffff;
+}
+.price-card.package-black {
+  background-color: #171717;
+}
+.price-card.package-black .card-title .title,
+.price-card.package-black .price .price-heading,
+.price-card.package-black .price .price-desc,
+.price-card.package-black .list ul li {
+  color: #ffffff;
+}
+.price-card.package-black .price-header {
+  border-color: #333F4D;
+}
+.price-card.package-black .price-header .price-header-icon {
+  background-color: #232323;
+}
+.price-card.package-black .price-btn {
+  background-color: #EB3300;
+  border-color: #EB3300;
+  color: #ffffff;
+}
+.price-card.package-black .card-title .sub-title {
+  color: #dfe2e9;
+}
+.price-card.package-gray {
+  background-color: #F4F4F4;
+}
+.price-card.package-gray .card-title .title,
+.price-card.package-gray .price .price-heading,
+.price-card.package-gray .list ul li {
+  color: #171717;
+}
+.price-card.package-gray .price .price-desc {
+  color: #595959;
+}
+.price-card.package-gray .price-header {
+  border-color: #E1E1E1;
+}
+.price-card.package-gray .price-header .price-header-icon {
+  background-color: #E1E1E1;
+}
+.price-card.package-gray .price-btn {
+  background-color: transparent;
+  border-color: #EB3300;
+  color: #171717;
+}
+.price-card.package-gray .price-btn:hover {
+  background-color: #EB3300;
+  color: #ffffff;
+}
+.price-card.package-gray .card-title .sub-title {
+  color: #595959;
 }
 .price-card .price-btn {
   display: block;

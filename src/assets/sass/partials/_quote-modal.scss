@@ -1,0 +1,469 @@
+// Quote Modal Styles
+.te-quote-modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: 9999;
+  visibility: hidden;
+  @include transition;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    @include transition;
+  }
+}
+
+.te-quote-modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+  pointer-events: none;
+  overflow-x: hidden;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.te-quote-modal-inner {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  padding: 15px;
+  max-height: 95vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  @include rmaxwd(991) {
+    max-width: 95%;
+    padding: 10px;
+    max-height: 98vh;
+  }
+
+  @include rmaxwd(768) {
+    max-width: 100%;
+    padding: 5px;
+    max-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  @media only screen and (max-height: 700px) {
+    max-height: 100vh;
+  }
+}
+
+.te-quote-modal-content {
+  background: #FFFFFF;
+  box-shadow: 0px 30px 70px rgba(208, 225, 242, 0.3);
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  @include rmaxwd(991) {
+    padding: 20px;
+  }
+
+  @include rmaxwd(768) {
+    padding: 15px;
+    border-radius: 0;
+    max-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  @media only screen and (max-height: 700px) {
+    padding: 20px;
+  }
+}
+
+.te-quote-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dfe2e9;
+  flex-shrink: 0;
+
+  @include rmaxwd(991) {
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+  }
+
+  @include rmaxwd(768) {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+
+  @media only screen and (max-height: 700px) {
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: $black;
+
+    @include rmaxwd(991) {
+      font-size: 20px;
+    }
+
+    @include rmaxwd(768) {
+      font-size: 18px;
+    }
+  }
+}
+
+.te-quote-modal-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: $black;
+  cursor: pointer;
+  padding: 5px 10px;
+  @include transition;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  @include rmaxwd(768) {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: #f5f5f5;
+    color: $primary-color;
+    @include transition;
+  }
+}
+
+.te-quote-modal-body {
+  width: 100%;
+  overflow-x: hidden;
+  flex: 1;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+// Quote Form Modal Styles
+.te-quote-form-modal {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.te-quote-form {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+
+    > [class*="col-"] {
+      padding-left: 8px;
+      padding-right: 8px;
+      box-sizing: border-box;
+
+      @include rmaxwd(768) {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+.te-quote-form-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  &:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @include rmaxwd(991) {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  @include rmaxwd(768) {
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+  }
+
+  @media only screen and (max-height: 700px) {
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+  }
+}
+
+.te-quote-form-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: $black;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @include rmaxwd(991) {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  @include rmaxwd(768) {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (max-height: 700px) {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  i {
+    color: $primary-color;
+    font-size: 18px;
+
+    @include rmaxwd(768) {
+      font-size: 16px;
+    }
+  }
+}
+
+.te-quote-form-group {
+  margin-bottom: 0;
+
+  label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 6px;
+    line-height: 1.4;
+
+    @include rmaxwd(991) {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    @include rmaxwd(768) {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    @media only screen and (max-height: 700px) {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.te-quote-form-control {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $black;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  @include transition;
+  font-family: inherit;
+  box-sizing: border-box;
+
+  @include rmaxwd(991) {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+
+  @include rmaxwd(768) {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+
+  @media only screen and (max-height: 700px) {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 3px rgba(235, 51, 0, 0.1);
+  }
+
+  &::placeholder {
+    color: #999;
+    opacity: 1;
+  }
+
+  select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 35px;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+
+    @include rmaxwd(991) {
+      min-height: 70px;
+    }
+
+    @include rmaxwd(768) {
+      min-height: 60px;
+    }
+
+    @media only screen and (max-height: 700px) {
+      min-height: 60px;
+    }
+  }
+}
+
+.te-quote-form-submit {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e8e8e8;
+
+  @include rmaxwd(991) {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+  @include rmaxwd(768) {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  @media only screen and (max-height: 700px) {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  .te-theme-btn {
+    width: 100%;
+    padding: 14px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    @include transition;
+
+    @include rmaxwd(768) {
+      padding: 12px 25px;
+      font-size: 14px;
+    }
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    i.fa-spinner {
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+.te-quote-form-message {
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  animation: slideDown 0.3s ease-out;
+
+  @include rmaxwd(768) {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  &.te-quote-form-message-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+
+  &.te-quote-form-message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+
+  i {
+    font-size: 16px;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

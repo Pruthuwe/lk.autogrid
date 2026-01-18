@@ -25,6 +25,7 @@ const SinglePricingPlansStyleTwo = ({ item, index } : {item:PricingCardData; ind
 
     const { sub_title, title, price, list } = item;
     const delay = index * 0.2;
+    const isBlack = index % 2 === 0; // Even indices (0, 2, 4...) = black, odd indices (1, 3, 5...) = gray
 
     return (
 
@@ -36,7 +37,7 @@ const SinglePricingPlansStyleTwo = ({ item, index } : {item:PricingCardData; ind
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ delay, duration: 0.6, ease: "easeOut" }}
             >
-                <div className="price-card style-2">
+                <div className={`price-card style-2 ${isBlack ? 'package-black' : 'package-gray'}`}>
                     <div className="card-title">
                         <h3 className="title">{title}</h3>
                         <p className="sub-title">{sub_title}</p>
