@@ -60,7 +60,7 @@ const SinglePricingPlansStyleTwo = ({ item, index } : {item:PricingCardData; ind
                             </ul>
                         </div>
                     </div>
-                    <Link to="/" className="price-btn">Get Started <i className="fa-solid fa-arrow-right"></i></Link>
+                    <Link to="/" className="price-btn">View Brochure <i className="fa-solid fa-arrow-right"></i></Link>
                 </div>
             </motion.div>
             </>
