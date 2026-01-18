@@ -15,7 +15,7 @@ const SliderV1 = () => {
                         >
                             <div className="te-slider-overlay" />
                             <div className="te-slider-feature-image">
-                                <img src="../../images/slider/slider-feature-one.png" alt="image" />
+                                <img src="../../images/slider/slider-feature-one.png" loading='eager' alt="image" />
                             </div>
                             <div className="container h-100">
                                 <div className="te-slider-container">

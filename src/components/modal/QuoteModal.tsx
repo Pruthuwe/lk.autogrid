@@ -1,5 +1,5 @@
 import React from 'react';
-import AppointmentFormV1 from '../form/AppointmentFormV1';
+import QuoteFormModal from '../form/QuoteFormModal';
 
 type QuoteModalProps = {
   isOpen: boolean;
@@ -23,13 +23,16 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
     if (isOpen) {
       document.addEventListener('keydown', handleEscapeKey);
       document.body.style.overflow = 'hidden';
+      document.body.style.overflowX = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
+      document.body.style.overflowX = 'unset';
     }
 
     return () => {
       document.removeEventListener('keydown', handleEscapeKey);
       document.body.style.overflow = 'unset';
+      document.body.style.overflowX = 'unset';
     };
   }, [isOpen, onClose]);
 
@@ -55,7 +58,7 @@ const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
               </button>
             </div>
             <div className="te-quote-modal-body">
-              <AppointmentFormV1 onSuccess={onClose} showTitle={false} compact={true} />
+              <QuoteFormModal onSuccess={onClose} />
             </div>
           </div>
         </div>

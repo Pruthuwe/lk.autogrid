@@ -59,7 +59,7 @@ const HeaderV1 = () => {
     // Quote Modal
     const [isQuoteModalOpen, setQuoteModalOpen] = useState(false);
 
-    const openQuoteModal = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const openQuoteModal = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault();
         setQuoteModalOpen(true);
     };
@@ -118,7 +118,7 @@ const HeaderV1 = () => {
                                                 <span>Need help?</span>
                                                 <Link to="tel:+94112844722"><i className="fa-solid fa-phone"></i>+94 112 844 722</Link>
                                             </div>
-                                            <Link to="#" className="te-quote-btn" onClick={openQuoteModal}>GET A QUOTE<i className="fa-solid fa-arrow-right"></i></Link>
+                                            <div className="te-quote-btn" onClick={openQuoteModal}>GET A QUOTE<i className="fa-solid fa-arrow-right"></i></div>
                                         </div>
                                         <div className="te-mobile-menu-bar d-lg-none text-end">
                                             <Link
