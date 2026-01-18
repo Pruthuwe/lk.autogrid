@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import LatestServiceV1Data from "../../jsonData/latestService/LatestServiceV1Data.json";
 import { submitQuoteForm } from "../../services/emailService";
 
-const AppointmentFormV1 = () => {
+type AppointmentFormV1Props = {
+  onSuccess?: () => void;
+  showTitle?: boolean;
+  compact?: boolean;
+};
+
+const AppointmentFormV1 = ({ onSuccess, showTitle = true, compact = false }: AppointmentFormV1Props) => {
   const [formData, setFormData] = useState({
     vehicleType: "",
     brand: "",
@@ -66,10 +72,17 @@ const AppointmentFormV1 = () => {
           service: "",
           message: "",
         });
-        // Clear message after 5 seconds
-        setTimeout(() => {
-          setSubmitMessage({ type: null, text: "" });
-        }, 5000);
+        // Call onSuccess callback if provided (e.g., to close modal)
+        if (onSuccess) {
+          setTimeout(() => {
+            onSuccess();
+          }, 2000); // Close modal after 2 seconds on success
+        } else {
+          // Clear message after 5 seconds if no callback
+          setTimeout(() => {
+            setSubmitMessage({ type: null, text: "" });
+          }, 5000);
+        }
       } else {
         setSubmitMessage({
           type: "error",
@@ -86,26 +99,13 @@ const AppointmentFormV1 = () => {
     }
   };
 
-  return (
-    <>
-      {/* Appointment Area Start */}
-      <div
-        className="appointment-area style-1"
-        style={{ backgroundImage: 'url("../../images/section-bg/appointment-bg.jpg")' }}
-      >
-        <div className="overlay" />
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              {/* Comment Form Start */}
-              <div className="te-comment-respond style-2 mt-0">
-                <h2 className="title text-white">Get A Quote</h2>
-                <form
-                  action="#"
-                  method="post"
-                  className="te-comment-form"
-                  onSubmit={handleSubmit}
-                >
+  const formContent = (
+    <form
+      action="#"
+      method="post"
+      className="te-comment-form"
+      onSubmit={handleSubmit}
+    >
                   <div className="row gx-4">
                     <div className="col-xl-6">
                       <div className="te-contacts-name">
@@ -222,7 +222,7 @@ const AppointmentFormV1 = () => {
                         <textarea
                           name="message"
                           cols={20}
-                          rows={3}
+                          rows={compact ? 2 : 3}
                           placeholder="Write your Message here"
                           value={formData.message}
                           onChange={handleChange}
@@ -255,6 +255,32 @@ const AppointmentFormV1 = () => {
                     </div>
                   </div>
                 </form>
+  );
+
+  if (compact) {
+    return (
+      <div className="te-comment-respond mt-0">
+        {showTitle && <h3>Get A Quote</h3>}
+        {formContent}
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {/* Appointment Area Start */}
+      <div
+        className="appointment-area style-1"
+        style={{ backgroundImage: 'url("../../images/section-bg/appointment-bg.jpg")' }}
+      >
+        <div className="overlay" />
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              {/* Comment Form Start */}
+              <div className="te-comment-respond style-2 mt-0">
+                {showTitle && <h2 className="title text-white">Get A Quote</h2>}
+                {formContent}
               </div>
               {/* Comment Form End */}
             </div>

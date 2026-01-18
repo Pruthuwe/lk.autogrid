@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { submitContactForm } from "../../services/emailService";
 
-const ContactForm = () => {
+type ContactFormProps = {
+  onSuccess?: () => void;
+  showTitle?: boolean;
+};
+
+const ContactForm = ({ onSuccess, showTitle = true }: ContactFormProps) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -46,10 +51,17 @@ const ContactForm = () => {
           number: "",
           message: "",
         });
-        // Clear message after 5 seconds
-        setTimeout(() => {
-          setSubmitMessage({ type: null, text: "" });
-        }, 5000);
+        // Call onSuccess callback if provided (e.g., to close modal)
+        if (onSuccess) {
+          setTimeout(() => {
+            onSuccess();
+          }, 2000); // Close modal after 2 seconds on success
+        } else {
+          // Clear message after 5 seconds if no callback
+          setTimeout(() => {
+            setSubmitMessage({ type: null, text: "" });
+          }, 5000);
+        }
       } else {
         setSubmitMessage({
           type: "error",
@@ -76,7 +88,7 @@ const ContactForm = () => {
           className="te-comment-form"
           onSubmit={handleSubmit}
         >
-          <h3>Contact Us</h3>
+          {showTitle && <h3>Contact Us</h3>}
           <div className="row gx-4">
             <div className="col-xl-6">
               <div className="te-contacts-name">

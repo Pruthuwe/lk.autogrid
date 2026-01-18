@@ -4,6 +4,7 @@ import MainMenu from './MainMenu';
 import HeaderLogo from './HeaderLogo';
 import SideBarMenu from './SideBarMenu';
 import SideBarOverlay from './SideBarOverlay';
+import QuoteModal from '../modal/QuoteModal';
 
 const HeaderV1 = () => {
 
@@ -53,6 +54,18 @@ const HeaderV1 = () => {
             listItem.classList.toggle('on');
             subMenu.style.maxHeight = subMenu.style.maxHeight === "20000px" ? "0" : "20000px";
         }
+    };
+
+    // Quote Modal
+    const [isQuoteModalOpen, setQuoteModalOpen] = useState(false);
+
+    const openQuoteModal = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        setQuoteModalOpen(true);
+    };
+
+    const closeQuoteModal = () => {
+        setQuoteModalOpen(false);
     };
 
     return (
@@ -105,7 +118,7 @@ const HeaderV1 = () => {
                                                 <span>Need help?</span>
                                                 <Link to="tel:+94112844722"><i className="fa-solid fa-phone"></i>+94 112 844 722</Link>
                                             </div>
-                                            <Link to="/contact" className="te-quote-btn">GET A QUOTE<i className="fa-solid fa-arrow-right"></i></Link>
+                                            <Link to="#" className="te-quote-btn" onClick={openQuoteModal}>GET A QUOTE<i className="fa-solid fa-arrow-right"></i></Link>
                                         </div>
                                         <div className="te-mobile-menu-bar d-lg-none text-end">
                                             <Link
@@ -130,6 +143,8 @@ const HeaderV1 = () => {
             <SideBarMenu toggleSubMenu={toggleSubMenu} closeMenu={closeMenu} isMenuActive={isMenuActive} />
 
             <SideBarOverlay isMenuActive={isMenuActive} handleOverlayClick={handleOverlayClick} />
+
+            <QuoteModal isOpen={isQuoteModalOpen} onClose={closeQuoteModal} />
 
         </>
     );

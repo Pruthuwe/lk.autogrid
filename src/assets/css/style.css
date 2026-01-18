@@ -3718,6 +3718,122 @@ body.admin-bar .header-menu-area.sticky_menu {
 .te-search-form-wrapper .te-search-form-inner .te-search-form .te-search-form-input .te-search-icon {
   display: flex;
 }
+/* Quote Modal Styles */
+.te-quote-modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: 9999;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.te-quote-modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
+.te-quote-modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+  pointer-events: none;
+}
+
+.te-quote-modal-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.te-quote-modal-inner {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  padding: 20px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.te-quote-modal-content {
+  background: #FFFFFF;
+  box-shadow: 0px 30px 70px rgba(208, 225, 242, 0.3);
+  border-radius: 5px;
+  padding: 40px;
+  position: relative;
+}
+
+.te-quote-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dfe2e9;
+}
+
+.te-quote-modal-header h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #171717;
+}
+
+.te-quote-modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #171717;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.te-quote-modal-close:hover {
+  background-color: #f5f5f5;
+  color: #EB3300;
+  transition: all 0.3s ease-out;
+}
+
+.te-quote-modal-body {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .te-quote-modal-inner {
+    padding: 10px;
+    max-width: 95%;
+  }
+  
+  .te-quote-modal-content {
+    padding: 25px 20px;
+  }
+  
+  .te-quote-modal-header h3 {
+    font-size: 24px;
+  }
+}
+
 .te-search-form-wrapper .te-search-form-inner .te-search-form .te-search-form-input button.te-submit-search-btn {
   padding: 15px 24px !important;
 }
