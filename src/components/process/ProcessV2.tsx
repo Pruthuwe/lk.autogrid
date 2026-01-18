@@ -20,10 +20,10 @@ const ProcessV2 = () => {
                             <div className="te-section-title justify-content-center text-center">
                                 <div className="te-section-content">
                                     <div className="short-title-wrapper">
-                                        <span className="short-title">Work process</span>
+                                        <span className="short-title">Our Work Process</span>
                                     </div>
                                     <h2 className="title">
-                                        Rely On Us For Top-Notch <br /> Car Repairs
+                                        How We Deliver <br /> Quality Service
                                     </h2>
                                 </div>
                             </div>

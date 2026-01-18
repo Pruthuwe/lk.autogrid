@@ -2,19 +2,19 @@
     {
         "id": 1,
         "icon": "icon-1.png",
-        "title": "Wheel Alignment",
-        "text": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their"
+        "title": "Book Your Appointment",
+        "text": "Schedule your service online or call us. We'll confirm your appointment and gather details about your vehicle needs."
     },
     {
         "id": 2,
         "icon": "icon-2.png",
-        "title": "Filter Replacement",
-        "text": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their"
+        "title": "Diagnostic & Assessment",
+        "text": "Our expert technicians perform diagnostic checks. We provide transparent reporting before proceeding with repairs."
     },
     {
         "id": 3,
         "icon": "icon-3.png",
-        "title": "System Upgrades",
-        "text": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their"
+        "title": "Service & Quality Check",
+        "text": "We complete the service with genuine parts and perform a final quality inspection. Your vehicle is ready to drive with confidence."
     }
 ]

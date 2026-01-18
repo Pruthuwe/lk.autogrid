@@ -21,10 +21,10 @@ const ProcessV1 = ({ style } : AddStyleProps) => {
                             <div className="te-section-title justify-content-center text-center">
                                 <div className="te-section-content">
                                     <div className="short-title-wrapper">
-                                        <span className="short-title">Work process</span>
+                                        <span className="short-title">Our Work Process</span>
                                     </div>
                                     <h2 className="title">
-                                        When Quality Counts <br /> Count on Us
+                                        Simple Steps to <br /> Exceptional Service
                                     </h2>
                                 </div>
                             </div>

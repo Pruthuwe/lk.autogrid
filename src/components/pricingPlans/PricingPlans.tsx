@@ -59,13 +59,12 @@ const PricingPlans = () => {
                             <div className="te-section-title mb-0">
                                 <div className="te-section-content">
                                     <div className="short-title-wrapper">
-                                        <span className="short-title only-divider">Our package</span>
+                                        <span className="short-title only-divider">Our Packages</span>
                                     </div>
-                                    <h2 className="title">Precision in Every Engine Piston</h2>
+                                    <h2 className="title">Comprehensive Service Plans for Every Vehicle</h2>
                                     <div className="te-section-desc">
                                         <p>
-                                            Et purus duis sollicitudin dignissim habitant. <br /> Egestas
-                                            nulla quis venenatis cras sed{" "}
+                                            Choose from our flexible service packages designed to keep your vehicle running smoothly. <br /> From routine maintenance to specialized repairs, we offer tailored solutions that fit your needs and budget.
                                         </p>
                                     </div>
                                     <div className="te-slider-btn-wrapper style-1 mt-4">

@@ -2,19 +2,19 @@
     {
         "id": 1,
         "icon": "icon-1.png",
-        "title": "Tech support",
-        "text": "Corporate restructuring an the refers to the process a of and reorganizin restr restructuring an reorganizin refers"
+        "title": "Schedule Service",
+        "text": "Contact us to book your appointment. Share your vehicle details and service requirements for a smooth booking experience."
     },
     {
         "id": 2,
         "icon": "icon-1.png",
-        "title": "Robo Genius",
-        "text": "Corporate restructuring an the refers to the process a of and reorganizin restr restructuring an reorganizin refers"
+        "title": "Expert Diagnosis",
+        "text": "Our technicians use diagnostic tools to assess your vehicle. We provide transparent reporting before proceeding with repairs."
     },
     {
         "id": 3,
         "icon": "icon-1.png",
-        "title": "Vision AI",
-        "text": "Corporate restructuring an the refers to the process a of and reorganizin restr restructuring an reorganizin refers"
+        "title": "Complete Service",
+        "text": "We perform the service with precision using quality parts, followed by a comprehensive quality check. Your vehicle is ready to drive with confidence."
     }
 ]
