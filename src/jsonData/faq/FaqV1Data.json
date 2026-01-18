@@ -8,7 +8,7 @@
         "ariaControls": "collapseOne",
         "title": "How often should I get my car serviced?",
         "collapseClass": "show",
-        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Many desktop publishing packages and web page editors now use Lor"
+        "text": "We recommend regular servicing every 6 months or 10,000 kilometers, whichever comes first. For hybrid vehicles, we suggest more frequent checks, especially for battery health. Our comprehensive service includes engine tune-ups, filter replacements, brake inspections, and full vehicle diagnostics to keep your car running smoothly and efficiently."
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "ariaControls": "collapseTwo",
         "title": "What do I do if my check engine light comes on?",
         "collapseClass": "",
-        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Many desktop publishing packages and web page editors now use Lor"
+        "text": "If your check engine light comes on, schedule a diagnostic appointment with us immediately. Our expert technicians use advanced diagnostic equipment to identify the issue accurately. Common causes include engine problems, emission system issues, or sensor malfunctions. Early diagnosis can prevent more costly repairs down the road."
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@
         "ariaControls": "collapseThree",
         "title": "How long does a typical repair take?",
         "collapseClass": "",
-        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Many desktop publishing packages and web page editors now use Lor"
+        "text": "Repair times vary depending on the service needed. Simple services like oil changes or filter replacements typically take 30-60 minutes. More complex repairs such as ABS brake system repairs, dual clutch repairs, or hybrid battery replacement may take 2-4 hours or longer. We'll provide an estimated completion time when you book your appointment."
     },
     {
         "id": 4,
@@ -41,6 +41,6 @@
         "ariaControls": "collapseFour",
         "title": "Do you provide warranty for your services?",
         "collapseClass": "",
-        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Many desktop publishing packages and web page editors now use Lor"
+        "text": "Yes, we provide warranty coverage on all our services and parts. Our workmanship warranty covers repairs for 12 months or 20,000 kilometers, and we use genuine parts with manufacturer warranties. This ensures you have peace of mind knowing your vehicle is protected. Warranty terms may vary by service type, so please ask for details when booking."
     }
 ]

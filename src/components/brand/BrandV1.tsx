@@ -43,6 +43,13 @@ const BrandV1 = () => {
                         <div className="slick-item">
                             <div className="client-logo-wrapper">
                                 <div className="client-logo">
+                                    <img src="images/brand-logo/honda.png" alt="logo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="slick-item">
+                            <div className="client-logo-wrapper">
+                                <div className="client-logo">
                                     <img src="images/brand-logo/nissan.png" alt="logo" />
                                 </div>
                             </div>
@@ -54,13 +61,7 @@ const BrandV1 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="slick-item">
-                            <div className="client-logo-wrapper">
-                                <div className="client-logo">
-                                    <img src="images/brand-logo/honda.png" alt="logo" />
-                                </div>
-                            </div>
-                        </div>
+                       
                         <div className="slick-item">
                             <div className="client-logo-wrapper">
                                 <div className="client-logo">

@@ -28,7 +28,7 @@ const Home1 = () => {
             <div style={{ height: '100px' }}></div>
             <MarqueeSliderV1 />
             <TestimonialV1 />
-            <PricingPlans />
+            <PricingPlans />    
             <ProcessV1 />
             <FaqV1 />
             {/* <TeamV1 /> */}

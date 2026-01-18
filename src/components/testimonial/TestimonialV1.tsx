@@ -40,7 +40,7 @@ const TestimonialV1 = ( { style } : AddStyleProps ) => {
     return (
         <>
             {/* Testimonial Area Start */}
-            <div className={`testimonial-slider-area style-1 ${style}`}>
+            <div className={`testimonial-slider-area style-1 ${style}`} style={{ marginTop: '4.2rem' }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">

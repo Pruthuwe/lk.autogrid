@@ -16,15 +16,14 @@ const FaqV1 = () => {
                             <div className="te-section-title">
                                 <div className="te-section-content">
                                     <div className="short-title-wrapper">
-                                        <span className="short-title only-divider">Ask question</span>
+                                        <span className="short-title only-divider">Frequently Asked Questions</span>
                                     </div>
                                     <h2 className="title text-white">
-                                        Bringing Your Drive <br /> Back to Life
+                                        Got Questions? <br /> We Have Answers
                                     </h2>
                                     <div className="te-section-desc">
                                         <p className="text-white">
-                                            Et purus duis sollicitudin dignissim habitant. Egestas nulla{" "}
-                                            <br /> quis venenatis cras sed Et purus duis sollicihabitan
+                                            Find answers to common questions about our automotive services. <br /> Can't find what you're looking for? Contact us for personalized assistance.
                                         </p>
                                     </div>
                                 </div>
