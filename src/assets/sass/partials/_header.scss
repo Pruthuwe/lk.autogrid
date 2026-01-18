@@ -266,8 +266,9 @@
         li {
           &.te-active {
             > a {
+              color: $primary-color;
               &:after {
-                bottom: 20px;
+                opacity: 1;
               }
             }
           }
@@ -393,8 +394,7 @@
 
           &:after {
            color: $primary-color;
-           font-size: 13px;
-           margin-left: 5px;
+           opacity: 1;
           }
           // &:after {
           //   position: absolute;
@@ -412,16 +412,13 @@
           // padding-right: 30px !important;
 
           &:after {
-           visibility: visible;
-           font-size: 13px;
-           margin-left: 5px;
+           opacity: 1;
           }
         }
         .te-dropdown {
           > a {
             &:after {
-             visibility: visible;
-             font-size: 13px;
+             opacity: 1;
             }
           }
         }
@@ -438,8 +435,7 @@
 
                 &:after {
                  color: $white;
-                 font-size: 13px;
-                 
+                 opacity: 1;
                 }
               }
             }
@@ -467,14 +463,19 @@
          font-family: $font-awesome;
          display: inline-block;
          margin-top: -5px;
-         visibility: hidden;
-         font-size: 0;
+         margin-left: 5px;
+         font-size: 13px;
+         opacity: 0;
+         width: 13px;
+         text-align: center;
+         @include transition;
         } 
         &:hover {
           color: $primary-color;
 
           &:after {
             color: $primary-color;
+            opacity: 1;
           }
         }
       }
@@ -537,6 +538,7 @@
 
             &:after {
              color: $white;
+             opacity: 1;
             }
           }
         }

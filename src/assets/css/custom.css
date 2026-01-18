@@ -152,4 +152,22 @@
         padding-left: 20px;
     }
 
+    .te-mobile-nav-menu .te-main-menu ul li.te-active > a {
+        color: #EB3300 !important;
+    }
+    
+    /* Ensure active link color works even when header is sticky */
+    .te-header-menu-area.te-sticky_menu ~ * .te-mobile-nav-menu .te-main-menu ul li.te-active > a,
+    .te-header-menu-area.te-sticky_menu .te-mobile-nav-menu .te-main-menu ul li.te-active > a,
+    .te-menu-sidebar-area .te-mobile-nav-menu .te-main-menu ul li.te-active > a {
+        color: #EB3300 !important;
+    }
+
+}
+
+/* Remove down arrow from all main menu links */
+.te-main-menu ul li > a:after,
+.te-main-menu ul li > a:hover:after,
+.te-main-menu ul li.te-active > a:after {
+    display: none !important;
 }
