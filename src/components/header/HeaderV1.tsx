@@ -103,7 +103,7 @@ const HeaderV1 = () => {
                                         <div className="te-header-btn">
                                             <div className="te-cta-btn">
                                                 <span>Need help?</span>
-                                                <Link to="#"><i className="fa-solid fa-phone"></i>+91 12 844 722</Link>
+                                                <Link to="tel:+94112844722"><i className="fa-solid fa-phone"></i>+94 112 844 722</Link>
                                             </div>
                                             <Link to="/contact" className="te-quote-btn">GET A QUOTE<i className="fa-solid fa-arrow-right"></i></Link>
                                         </div>

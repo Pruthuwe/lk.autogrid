@@ -33,10 +33,10 @@ const SideBarMenu = ({ isMenuActive, closeMenu, toggleSubMenu }: SideBarMenuProp
                             <div className="te-menu-sidebar-single-widget">
                                 <h5 className="te-menu-sidebar-title">Contact Info</h5>
                                 <div className="te-header-contact-info">
-                                    <span><i className="fa-solid fa-location-dot"></i>6391 Elgin St. Celina, 10299</span>
+                                    <span><i className="fa-solid fa-location-dot"></i>246 Athurugiriya Road, Malapalla, Kottawa.</span>
                                     <span><Link to="mailto:info@example.com"><i
-                                        className="fa-solid fa-envelope"></i>info@example.com</Link> </span>
-                                    <span><Link to="tel:+123-456-7890"><i className="fa-solid fa-phone"></i>+123-456-7890</Link></span>
+                                        className="fa-solid fa-envelope"></i>info@autogrid.lk</Link> </span>
+                                    <span><Link to="tel:+94112844722"><i className="fa-solid fa-phone"></i>+94 112 844 722</Link></span>
                                 </div>
                                 <div className="te-social-profile">
                                     <SocialShare />

@@ -30,8 +30,8 @@ const ContactInfo = () => {
                         </div>
                         <div className="content">
                             <h3 className="title">Phone number</h3>
-                            <Link to="tel:+9112844722" className="desc">
-                                +91 12 844 722
+                            <Link to="tel:+94112844722" className="desc">
+                                +94 112 844 722
                             </Link>
                         </div>
                     </div>
