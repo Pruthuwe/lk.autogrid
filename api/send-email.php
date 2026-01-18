@@ -3,7 +3,7 @@
  * Email Form Submission Handler
  * 
  * This endpoint handles form submissions from the React frontend
- * and sends emails to the shop owner via SMTP.
+ * and sends emails to the shop owner using PHP's native mail() function.
  */
 
 header('Content-Type: application/json');
@@ -177,60 +177,18 @@ $emailBody = "
 </html>
 ";
 
-// Try to use PHPMailer if available, otherwise fall back to mail()
-$emailSent = false;
+// Send email using PHP mail() function
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers .= "From: " . SMTP_FROM_NAME . " <" . SMTP_FROM_EMAIL . ">" . "\r\n";
+$headers .= "Reply-To: " . (!empty($formData['email']) ? $formData['email'] : SMTP_FROM_EMAIL) . "\r\n";
+$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+
+$emailSent = @mail(SHOP_OWNER_EMAIL, $subject, $emailBody, $headers);
 $errorMessage = '';
 
-// Check if PHPMailer is available
-$phpmailerPath = __DIR__ . '/PHPMailer/PHPMailer.php';
-if (file_exists($phpmailerPath)) {
-    require_once $phpmailerPath;
-    require_once __DIR__ . '/PHPMailer/SMTP.php';
-    require_once __DIR__ . '/PHPMailer/Exception.php';
-    
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
-    
-    try {
-        $mail = new PHPMailer(true);
-        
-        // SMTP Configuration
-        $mail->isSMTP();
-        $mail->Host = SMTP_HOST;
-        $mail->SMTPAuth = true;
-        $mail->Username = SMTP_USERNAME;
-        $mail->Password = SMTP_PASSWORD;
-        $mail->SMTPSecure = SMTP_ENCRYPTION;
-        $mail->Port = SMTP_PORT;
-        $mail->CharSet = 'UTF-8';
-        
-        // Email settings
-        $mail->setFrom(SMTP_FROM_EMAIL, SMTP_FROM_NAME);
-        $mail->addAddress(SHOP_OWNER_EMAIL);
-        $mail->isHTML(true);
-        $mail->Subject = $subject;
-        $mail->Body = $emailBody;
-        
-        // Plain text alternative
-        $mail->AltBody = strip_tags($emailBody);
-        
-        $mail->send();
-        $emailSent = true;
-    } catch (Exception $e) {
-        $errorMessage = "PHPMailer Error: " . $mail->ErrorInfo;
-    }
-} else {
-    // Fallback to PHP mail() function
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: " . SMTP_FROM_NAME . " <" . SMTP_FROM_EMAIL . ">" . "\r\n";
-    $headers .= "Reply-To: " . (!empty($formData['email']) ? $formData['email'] : SMTP_FROM_EMAIL) . "\r\n";
-    
-    $emailSent = @mail(SHOP_OWNER_EMAIL, $subject, $emailBody, $headers);
-    
-    if (!$emailSent) {
-        $errorMessage = "Failed to send email using PHP mail() function";
-    }
+if (!$emailSent) {
+    $errorMessage = "Failed to send email using PHP mail() function";
 }
 
 // Return response
