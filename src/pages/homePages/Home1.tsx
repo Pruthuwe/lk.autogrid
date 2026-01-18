@@ -27,11 +27,11 @@ const Home1 = () => {
             {/* <ProjectV1 /> */}
             <div style={{ height: '100px' }}></div>
             <MarqueeSliderV1 />
-            <PricingPlans />
             <TestimonialV1 />
+            <PricingPlans />
             <ProcessV1 />
             <FaqV1 />
-            <TeamV1 />
+            {/* <TeamV1 /> */}
             <AppointmentFormV1 />
             <CtaV1 />
             {/* <BlogV1 /> */}
