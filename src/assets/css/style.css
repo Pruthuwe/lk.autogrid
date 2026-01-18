@@ -4975,6 +4975,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 .te-info-card.style-2 .content {
   align-items: flex-start;
 }
+.te-info-card.style-2 .content .desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .latest-service-slider {
   overflow: hidden;
