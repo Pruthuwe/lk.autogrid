@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import LatestServiceV1Data from "../../jsonData/latestService/LatestServiceV1Data.json";
 import { submitContactForm } from "../../services/emailService";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    vehicleType: "",
-    brand: "",
-    vehicleModel: "",
     name: "",
     email: "",
     number: "",
-    service: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -18,17 +13,6 @@ const ContactForm = () => {
     type: "success" | "error" | null;
     text: string;
   }>({ type: null, text: "" });
-
-  const vehicleTypes = ["Car", "SUV", "Van", "Truck", "Motorcycle", "Other"];
-  const vehicleBrands = [
-    "Nissan",
-    "Toyota",
-    "Honda",
-    "Kia",
-    "Suzuki",
-    "Hyundai",
-    "Other",
-  ];
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -57,13 +41,9 @@ const ContactForm = () => {
         });
         // Reset form
         setFormData({
-          vehicleType: "",
-          brand: "",
-          vehicleModel: "",
           name: "",
           email: "",
           number: "",
-          service: "",
           message: "",
         });
         // Clear message after 5 seconds
@@ -96,57 +76,8 @@ const ContactForm = () => {
           className="te-comment-form"
           onSubmit={handleSubmit}
         >
-          <h3>Book Your Consultation</h3>
+          <h3>Contact Us</h3>
           <div className="row gx-4">
-            <div className="col-xl-6">
-              <div className="te-contacts-name">
-                <select
-                  name="vehicleType"
-                  value={formData.vehicleType}
-                  onChange={handleChange}
-                  required
-                >
-                  <option value="" disabled selected>
-                    Vehicle Type *
-                  </option>
-                  {vehicleTypes.map((type, index) => (
-                    <option key={index} value={type}>
-                      {type}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div className="te-contacts-name">
-                <select
-                  name="brand"
-                  value={formData.brand}
-                  onChange={handleChange}
-                  required
-                >
-                  <option value="" disabled selected>
-                    Vehicle Brand *
-                  </option>
-                  {vehicleBrands.map((brand, index) => (
-                    <option key={index} value={brand}>
-                      {brand}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div className="te-contacts-name">
-                <input
-                  name="vehicleModel"
-                  type="text"
-                  placeholder="Vehicle Model"
-                  value={formData.vehicleModel}
-                  onChange={handleChange}
-                />
-              </div>
-            </div>
             <div className="col-xl-6">
               <div className="te-contacts-name">
                 <input
@@ -156,17 +87,6 @@ const ContactForm = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                />
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div className="te-contacts-email">
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -183,29 +103,15 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="col-xl-12">
-              <div className="te-contacts-name">
-                <select
-                  name="service"
-                  value={formData.service}
+              <div className="te-contacts-email">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Your Email *"
+                  value={formData.email}
                   onChange={handleChange}
                   required
-                >
-                  <option value="" disabled selected>Select Service *</option>
-                  {LatestServiceV1Data.map((service) => (
-                    <option
-                      key={service.id}
-                      value={
-                        service.title === "Many More Automobile Services"
-                          ? "Other"
-                          : service.title
-                      }
-                    >
-                      {service.title === "Many More Automobile Services"
-                        ? "Other"
-                        : service.title}
-                    </option>
-                  ))}
-                </select>
+                />
               </div>
             </div>
             <div className="col-xl-12">
@@ -214,9 +120,10 @@ const ContactForm = () => {
                   name="message"
                   cols={20}
                   rows={3}
-                  placeholder="Write your Message here"
+                  placeholder="Write your Message here *"
                   value={formData.message}
                   onChange={handleChange}
+                  required
                 />
               </div>
             </div>

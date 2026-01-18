@@ -10,7 +10,7 @@ export interface FormData {
   name: string;
   email?: string;
   number: string;
-  service: string;
+  service?: string;
   message?: string;
 }
 

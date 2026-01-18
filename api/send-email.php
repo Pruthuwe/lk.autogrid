@@ -66,7 +66,11 @@ if (!$input) {
 
 // Validate required fields
 $formType = $input['formType'] ?? '';
-$requiredFields = ['name', 'number', 'service'];
+// For contact forms, only require name, number, email, and message
+// For quote forms, also require service
+$requiredFields = $formType === 'contact' 
+    ? ['name', 'number', 'email', 'message']
+    : ['name', 'number', 'service'];
 
 foreach ($requiredFields as $field) {
     if (empty($input[$field])) {
@@ -131,31 +135,33 @@ $emailBody = "
                 <div class='value'>{$formData['number']}</div>
             </div>
             
-            " . (!empty($formData['vehicleType']) ? "
+            " . ($formType !== 'contact' && !empty($formData['vehicleType']) ? "
             <div class='field'>
                 <div class='label'>Vehicle Type:</div>
                 <div class='value'>{$formData['vehicleType']}</div>
             </div>
             " : "") . "
             
-            " . (!empty($formData['brand']) ? "
+            " . ($formType !== 'contact' && !empty($formData['brand']) ? "
             <div class='field'>
                 <div class='label'>Vehicle Brand:</div>
                 <div class='value'>{$formData['brand']}</div>
             </div>
             " : "") . "
             
-            " . (!empty($formData['vehicleModel']) ? "
+            " . ($formType !== 'contact' && !empty($formData['vehicleModel']) ? "
             <div class='field'>
                 <div class='label'>Vehicle Model:</div>
                 <div class='value'>{$formData['vehicleModel']}</div>
             </div>
             " : "") . "
             
+            " . ($formType !== 'contact' && !empty($formData['service']) ? "
             <div class='field'>
                 <div class='label'>Service Requested:</div>
                 <div class='value'>{$formData['service']}</div>
             </div>
+            " : "") . "
             
             " . (!empty($formData['message']) ? "
             <div class='field'>
