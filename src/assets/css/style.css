@@ -3655,17 +3655,18 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 17px;
   letter-spacing: 0.6px;
   text-transform: capitalize;
-  color: #171717;
+  color: #ffffff;
   border: 1px solid #EB3300;
   border-radius: 5px;
   padding: 19px 27px;
   transition: all 0.5s ease-out;
   margin-left: 40px;
   flex-shrink: 0;
+  background-color: #EB3300;
 }
 .te-header-btn .te-quote-btn:hover {
-  background-color: #EB3300;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #171717;
   transition: all 0.5s ease-out;
 }
 

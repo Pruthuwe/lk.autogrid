@@ -631,17 +631,18 @@
     line-height: 17px;
     letter-spacing: 0.6px;
     text-transform: capitalize;
-    color: $black;
+    color: $white;
     border: 1px solid $primary-color;
     border-radius: 5px;
     padding: 19px 27px;
     @include transition;
     margin-left: 40px;
     flex-shrink: 0;
+    background-color: $primary-color;
 
     &:hover {
-      background-color: $primary-color;
-      color: $white;
+      
+      color: $black;
       @include transition;
     }
   }
